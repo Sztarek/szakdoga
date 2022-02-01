@@ -31,8 +31,8 @@ def main(argv):
     elif opt in ("-n", "--numberOfLayers"):
       layerNum.append(int(arg))
     elif opt in ("-l", "--learningDatabaseName"):
-      if(arg not in ['sst2', 'rte', 'mrpc']):
-        raise Exception('Not supported parameter, use sst2, rte or mrpc')
+      if(arg not in ['cola', 'rte', 'mrpc']):
+        raise Exception('Not supported parameter, use cola, rte or mrpc')
       dbName.append(arg)
 
   multipleLearn(generateParameters(dbName, layerNum))
@@ -84,8 +84,8 @@ def permutations(iterable, r=None):
 
 
 def preprocess(dbName):
-  if(dbName == 'sst2'):
-    return preprocessSST()
+  if(dbName == 'cola'):
+    return preprocessCola()
   elif(dbName == 'rte'):
     return preprocessRTE()
   elif(dbName == 'mrpc'):
@@ -122,6 +122,7 @@ def learn(dbName, freeze_layer_count, model_name, numInIteration):
 
   device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
   model.to(device)
+  model.half()
   print(device)
 
   progress_bar = tqdm(range(num_training_steps))
@@ -179,8 +180,8 @@ def preprocessRTE():
 
   return [tokenized_datasets, data_collator]
 
-def preprocessSST():
-  raw_datasets = load_dataset("glue", 'sst2')
+def preprocessCola():
+  raw_datasets = load_dataset("glue", 'cola')
   checkpoint = "bert-base-uncased"
   tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
