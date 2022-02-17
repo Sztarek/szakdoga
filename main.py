@@ -198,6 +198,7 @@ def preprocessCola():
 
 def eval(model, eval_dataloader, device, model_name, numInIteration):
   model.save_pretrained('./models/'+model_name)
+  model.eval()
   f = open(file_name, "a")
   f.write(model_name + ' - ' + str(numInIteration) + ':\n')
   for metricName in ["sst2", "mnli", "mnli_mismatched", "mnli_matched", "cola", "stsb", "mrpc", "qqp", "qnli", "rte", "wnli", "hans"]:
