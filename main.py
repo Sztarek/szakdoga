@@ -1,20 +1,22 @@
 import sys
 import getopt
-from transformers import AutoTokenizer
+from transformers import BertTokenizer
 from datasets import load_dataset
 from tqdm.auto import tqdm
 from transformers import AdamW
 from torch.utils.data import DataLoader
-from transformers import get_scheduler
-from transformers import AutoModelForSequenceClassification
+from transformers import get_linear_schedule_with_warmup
+from transformers import BertForSequenceClassification
 from datasets import load_metric
 import torch
 from transformers.data.data_collator import DataCollatorWithPadding
 import re
+from keras.preprocessing.sequence import pad_sequences
 
 file_name='out.txt'
 checkpoint_base = "bert-base-uncased"
 freeze_layer_count = 12
+eval_dataloader = [None, None, None]
 
 def main(argv):
   layerNum = []
@@ -44,9 +46,9 @@ def multipleLearn(params):
     modelName = re.sub("\(|\)|\[|\]|,|\'", '', str(param).replace(', ', '_'))
     print('Name of the model is: ' + modelName)
     for db in param[0]:
-      learn(db, param[1], modelName, param[0].index(db))
+      learn(db, param[1], modelName, param[0].index(db), param[0])
       print('Finished learning with database: ', db)
-      print('Frozed layer count: ', param[1])
+      print('Frozen layer count: ', param[1])
     print('Finished learning with following parameters: ', param)
     print('Saved results in: ', file_name)
 
@@ -91,9 +93,10 @@ def preprocess(dbName):
   elif(dbName == 'mrpc'):
     return preprocessMRPC()
   else:
-    raise Exception('Not supported parameter, use sst2, rte or mrpc')
+    raise Exception('Not supported parameter, use cola, rte or mrpc')
 
-def learn(dbName, freeze_layer_count, model_name, numInIteration):
+def learn(dbName, freeze_layer_count, model_name, numInIteration, params):
+  global eval_dataloader
   checkpoint = './models/'+model_name
   if numInIteration == 0:
     checkpoint = checkpoint_base
@@ -102,57 +105,70 @@ def learn(dbName, freeze_layer_count, model_name, numInIteration):
   data_collator = result[1]
 
   train_dataloader = DataLoader(
-    tokenized_datasets["train"], shuffle=True, batch_size=1, collate_fn=data_collator
+    tokenized_datasets["train"], shuffle=True, batch_size=6, collate_fn=data_collator
   )
-  eval_dataloader = DataLoader(
-    tokenized_datasets["validation"], batch_size=1, collate_fn=data_collator
+  eval_dataloader[numInIteration] = DataLoader(
+    tokenized_datasets["validation"], batch_size=6, collate_fn=data_collator
   )
 
-  model = AutoModelForSequenceClassification.from_pretrained(checkpoint, num_labels=2)
-  optimizer = AdamW(model.parameters(), lr=5e-5)
+  model = BertForSequenceClassification.from_pretrained(
+    checkpoint,
+    num_labels=2,
+    output_attentions = False,
+    output_hidden_states = False
+  )
+  optimizer = AdamW(model.parameters(), lr=2e-5)
 
   num_epochs = 3
   num_training_steps = num_epochs * len(train_dataloader)
-  lr_scheduler = get_scheduler(
-    "linear",
-    optimizer=optimizer,
-    num_warmup_steps=0,
-    num_training_steps=num_training_steps,
+  lr_scheduler = get_linear_schedule_with_warmup(
+    optimizer,
+    num_warmup_steps = 0,
+    num_training_steps = num_training_steps
   )
 
   device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
   model.to(device)
-  model.half()
-  print(device)
 
   progress_bar = tqdm(range(num_training_steps))
+  model.train()
   for layer in model.bert.encoder.layer[:freeze_layer_count]:
     for param in layer.parameters():
       param.requires_grad = False
-  model.train()
   for epoch in range(num_epochs):
-    for batch in train_dataloader:
+    for step, batch in enumerate(train_dataloader):
       batch = {k: v.to(device) for k, v in batch.items()}
-      outputs = model(**batch)
-      loss = outputs.loss
-      loss.backward()
+      b_input_ids = batch.get('input_ids')
+      b_input_mask = batch.get('input_mask')
+      b_labels = batch.get('labels')
+      b_token_type_ids = batch.get('token_type_ids')
 
+      model.zero_grad()
+
+      outputs = model(b_input_ids,
+                      token_type_ids=b_token_type_ids,
+                      attention_mask=b_input_mask,
+                      labels=b_labels)
+      loss = outputs[0]
+      loss.backward()
+      torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
       optimizer.step()
       lr_scheduler.step()
-      optimizer.zero_grad()
+
       progress_bar.update(1)
 
-  eval(model, eval_dataloader, device, model_name, numInIteration)
+  eval(model, device, model_name, numInIteration, params)
 
 
-#rte, sst, mrpc
+#stsb, cola, mrpc
 def preprocessMRPC():
   raw_datasets = load_dataset("glue", 'mrpc')
-  checkpoint = "bert-base-uncased"
-  tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 
-  def tokenize_function(example):
-    return tokenizer(example["sentence1"], example["sentence2"], truncation=True)
+  checkpoint = "bert-base-uncased"
+  tokenizer = BertTokenizer.from_pretrained(checkpoint)
+
+  def tokenize_function(e):
+    return tokenizer(e["sentence1"], e["sentence2"], truncation=True)
 
   tokenized_datasets = raw_datasets.map(tokenize_function, batched=True)
   data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
@@ -166,10 +182,10 @@ def preprocessMRPC():
 def preprocessRTE():
   raw_datasets = load_dataset("glue", 'rte')
   checkpoint = "bert-base-uncased"
-  tokenizer = AutoTokenizer.from_pretrained(checkpoint)
+  tokenizer = BertTokenizer.from_pretrained(checkpoint)
 
-  def tokenize_function(example):
-    return tokenizer(example["sentence1"], example["sentence2"], truncation=True)
+  def tokenize_function(e):
+    return tokenizer(e["sentence1"], e["sentence2"], truncation=True)
 
   tokenized_datasets = raw_datasets.map(tokenize_function, batched=True)
   data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
@@ -183,10 +199,10 @@ def preprocessRTE():
 def preprocessCola():
   raw_datasets = load_dataset("glue", 'cola')
   checkpoint = "bert-base-uncased"
-  tokenizer = AutoTokenizer.from_pretrained(checkpoint)
+  tokenizer = BertTokenizer.from_pretrained(checkpoint)
 
-  def tokenize_function(example):
-    return tokenizer(example["sentence"], truncation=True)
+  def tokenize_function(e):
+    return tokenizer(e["sentence"], truncation=True, do_lower_case=True)
 
   tokenized_datasets = raw_datasets.map(tokenize_function, batched=True)
   tokenized_datasets = tokenized_datasets.remove_columns(["sentence", "idx"])
@@ -196,14 +212,16 @@ def preprocessCola():
 
   return [tokenized_datasets, data_collator]
 
-def eval(model, eval_dataloader, device, model_name, numInIteration):
+def eval(model, device, model_name, numInIteration, params):
   model.save_pretrained('./models/'+model_name)
+  global eval_dataloader
   model.eval()
   f = open(file_name, "a")
   f.write(model_name + ' - ' + str(numInIteration) + ':\n')
-  for metricName in ["sst2", "mnli", "mnli_mismatched", "mnli_matched", "cola", "stsb", "mrpc", "qqp", "qnli", "rte", "wnli", "hans"]:
+  i = 0
+  for metricName in params[:(numInIteration + 1)]:
     metric = load_metric('glue', metricName)
-    for batch in eval_dataloader:
+    for batch in eval_dataloader[i]:
       batch = {k: v.to(device) for k, v in batch.items()}
       with torch.no_grad():
         outputs = model(**batch)
@@ -213,6 +231,7 @@ def eval(model, eval_dataloader, device, model_name, numInIteration):
       metric.add_batch(predictions=predictions, references=batch["labels"])
 
     f.write(metricName + ": " + str(metric.compute()) + '\n')
+    i += 1
   f.write('\n')
   f.close()
 

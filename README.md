@@ -14,1495 +14,934 @@ This project is a command line program which is used to test for catastrophic fo
 
 **Results**
 
-cola_rte_mrpc_0 - 0:
+rte_mrpc_cola_0 - 0:  
+rte: {'accuracy': 0.6823104693140795}  
 
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6903163950143816, 'f1': 0.8167895632444696}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_rte_mrpc_0 - 1:
-
-sst2: {'accuracy': 0.49458483754512633}  
-mnli: {'accuracy': 0.5523465703971119}  
-mnli_mismatched: {'accuracy': 0.5090252707581228}  
-mnli_matched: {'accuracy': 0.5054151624548736}  
-cola: {'matthews_correlation': 0.020497029939120007}  
-stsb: {'pearson': -0.00934439887803606, 'spearmanr': -0.009344398878036071}  
-mrpc: {'accuracy': 0.592057761732852, 'f1': 0.5425101214574899}  
-qqp: {'accuracy': 0.48375451263537905, 'f1': 0.45627376425855515}  
-qnli: {'accuracy': 0.49458483754512633}  
-rte: {'accuracy': 0.51985559566787}  
-wnli: {'accuracy': 0.4981949458483754}  
-hans: {'accuracy': 0.555956678700361}  
-
-cola_rte_mrpc_0 - 2:
-
-sst2: {'accuracy': 0.6813725490196079}  
-mnli: {'accuracy': 0.6813725490196079}  
-mnli_mismatched: {'accuracy': 0.678921568627451}  
-mnli_matched: {'accuracy': 0.6862745098039216}  
-cola: {'matthews_correlation': -0.03370509448285096}  
-stsb: {'pearson': 0.07289706481174736, 'spearmanr': 0.07289706481174744}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_0 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6903163950143816}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': -0.020702674026557004}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6893576222435283}  
-
-cola_mrpc_rte_0 - 1:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6862745098039216}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.07289706481174742}  
-stsb: {'pearson': 0.07289706481174739, 'spearmanr': 0.07289706481174744}  
-mrpc: {'accuracy': 0.678921568627451, 'f1': 0.8087591240875913}  
-qqp: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_0 - 2:
-
-sst2: {'accuracy': 0.51985559566787}  
-mnli: {'accuracy': 0.51985559566787}  
-mnli_mismatched: {'accuracy': 0.47653429602888087}  
-mnli_matched: {'accuracy': 0.49097472924187724}  
-cola: {'matthews_correlation': 0.013010087122651923}  
-stsb: {'pearson': -0.014600455827460538, 'spearmanr': -0.014600455827460546}  
-mrpc: {'accuracy': 0.5234657039711191, 'f1': 0.5074626865671642}  
-qqp: {'accuracy': 0.5415162454873647, 'f1': 0.5313653136531366}  
-qnli: {'accuracy': 0.47653429602888087}  
-rte: {'accuracy': 0.5306859205776173}  
-wnli: {'accuracy': 0.5451263537906137}  
-hans: {'accuracy': 0.5306859205776173}  
-
-rte_cola_mrpc_0 - 0:
-
-sst2: {'accuracy': 0.5090252707581228}  
-mnli: {'accuracy': 0.4693140794223827}  
-mnli_mismatched: {'accuracy': 0.5306859205776173}  
-mnli_matched: {'accuracy': 0.5090252707581228}  
-cola: {'matthews_correlation': 0.1022058430173232}  
-stsb: {'pearson': -0.027249166381744728, 'spearmanr': -0.027249166381744672}  
-mrpc: {'accuracy': 0.516245487364621, 'f1': 0.3909090909090909}  
-qqp: {'accuracy': 0.51985559566787, 'f1': 0.43881856540084385}  
-qnli: {'accuracy': 0.48014440433212996}  
-rte: {'accuracy': 0.5379061371841155}  
-wnli: {'accuracy': 0.47653429602888087}  
-hans: {'accuracy': 0.4981949458483754}  
-
-rte_cola_mrpc_0 - 1:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6893576222435283}  
-mnli_mismatched: {'accuracy': 0.6903163950143816}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6903163950143816}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-rte_cola_mrpc_0 - 2:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': 0.027747016194979744}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qqp: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-rte_mrpc_cola_0 - 0:
-
-sst2: {'accuracy': 0.48736462093862815}  
-mnli: {'accuracy': 0.49458483754512633}  
-mnli_mismatched: {'accuracy': 0.4657039711191336}  
-mnli_matched: {'accuracy': 0.4981949458483754}  
-cola: {'matthews_correlation': -0.015162605876816898}  
-stsb: {'pearson': -0.02225249618744217, 'spearmanr': -0.022252496187442163}  
-mrpc: {'accuracy': 0.48375451263537905, 'f1': 0.46037735849056605}  
-qqp: {'accuracy': 0.45126353790613716, 'f1': 0.45714285714285713}  
-qnli: {'accuracy': 0.5379061371841155}  
-rte: {'accuracy': 0.48736462093862815}  
-wnli: {'accuracy': 0.5054151624548736}  
-hans: {'accuracy': 0.4620938628158845}  
-
-rte_mrpc_cola_0 - 1:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6862745098039216}  
-hans: {'accuracy': 0.6813725490196079}  
-
-rte_mrpc_cola_0 - 2:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6903163950143816}  
-hans: {'accuracy': 0.6912751677852349}  
-
-mrpc_cola_rte_0 - 0:
-
-sst2: {'accuracy': 0.6813725490196079}  
-mnli: {'accuracy': 0.6813725490196079}  
-mnli_mismatched: {'accuracy': 0.6887254901960784}  
-mnli_matched: {'accuracy': 0.6862745098039216}  
-cola: {'matthews_correlation': -0.05852290412010273}  
-stsb: {'pearson': -0.03370509448285092, 'spearmanr': -0.03370509448285096}  
-mrpc: {'accuracy': 0.6862745098039216, 'f1': 0.8134110787172011}  
-qqp: {'accuracy': 0.6862745098039216, 'f1': 0.8134110787172011}  
-qnli: {'accuracy': 0.678921568627451}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-mrpc_cola_rte_0 - 1:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': -0.020702674026557004, 'spearmanr': -0.020702674026557004}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-mrpc_cola_rte_0 - 2:
-
-sst2: {'accuracy': 0.48014440433212996}  
-mnli: {'accuracy': 0.49097472924187724}  
-mnli_mismatched: {'accuracy': 0.49458483754512633}  
-mnli_matched: {'accuracy': 0.5126353790613718}  
-cola: {'matthews_correlation': 0.07237430254257324}  
-stsb: {'pearson': -0.050999062943980204, 'spearmanr': -0.05099906294398018}  
-mrpc: {'accuracy': 0.5703971119133574, 'f1': 0.5475285171102661}  
-qqp: {'accuracy': 0.4729241877256318, 'f1': 0.44274809160305345}  
-qnli: {'accuracy': 0.4981949458483754}  
+rte_mrpc_cola_0 - 1:  
 rte: {'accuracy': 0.4981949458483754}  
-wnli: {'accuracy': 0.4729241877256318}  
-hans: {'accuracy': 0.49458483754512633}  
+mrpc: {'accuracy': 0.8455882352941176, 'f1': 0.8941176470588236}  
 
-mrpc_rte_cola_0 - 0:
-
-sst2: {'accuracy': 0.6764705882352942}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': -0.04772486785536518, 'spearmanr': -0.04772486785536515}  
-mrpc: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qqp: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qnli: {'accuracy': 0.6813725490196079}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6813725490196079}  
-hans: {'accuracy': 0.6838235294117647}  
-
-mrpc_rte_cola_0 - 1:
-
-sst2: {'accuracy': 0.5126353790613718}  
-mnli: {'accuracy': 0.5487364620938628}  
-mnli_mismatched: {'accuracy': 0.4729241877256318}  
-mnli_matched: {'accuracy': 0.5342960288808665}  
-cola: {'matthews_correlation': 0.03195325056656263}  
-stsb: {'pearson': -0.08374675475288638, 'spearmanr': -0.08374675475288638}  
-mrpc: {'accuracy': 0.5270758122743683, 'f1': 0.5304659498207885}  
-qqp: {'accuracy': 0.5054151624548736, 'f1': 0.5054151624548736}  
-qnli: {'accuracy': 0.5451263537906137}  
-rte: {'accuracy': 0.4729241877256318}  
-wnli: {'accuracy': 0.5306859205776173}  
-hans: {'accuracy': 0.47653429602888087}  
-
-mrpc_rte_cola_0 - 2:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6922339405560882}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6922339405560882, 'f1': 0.8179239931934204}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6922339405560882}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_rte_mrpc_2 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6903163950143816}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_rte_mrpc_2 - 1:
-
-sst2: {'accuracy': 0.5018050541516246}  
-mnli: {'accuracy': 0.49458483754512633}  
-mnli_mismatched: {'accuracy': 0.49097472924187724}  
-mnli_matched: {'accuracy': 0.5090252707581228}  
-cola: {'matthews_correlation': -0.020748300999891413}  
-stsb: {'pearson': -0.07816498104330846, 'spearmanr': -0.07816498104330842}  
-mrpc: {'accuracy': 0.4584837545126354, 'f1': 0.489795918367347}  
-qqp: {'accuracy': 0.5090252707581228, 'f1': 0.5310344827586206}  
-qnli: {'accuracy': 0.516245487364621}  
-rte: {'accuracy': 0.516245487364621}  
-wnli: {'accuracy': 0.516245487364621}  
-hans: {'accuracy': 0.5090252707581228}  
-
-cola_rte_mrpc_2 - 2:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6813725490196079}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6813725490196079}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_2 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6922339405560882}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_mrpc_rte_2 - 1:
-
-sst2: {'accuracy': 0.6813725490196079}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6813725490196079}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_2 - 2:
-
-sst2: {'accuracy': 0.49458483754512633}  
-mnli: {'accuracy': 0.516245487364621}  
-mnli_mismatched: {'accuracy': 0.48375451263537905}  
-mnli_matched: {'accuracy': 0.5379061371841155}  
-cola: {'matthews_correlation': -0.0810750160464632}  
-stsb: {'pearson': 0.0606889200774002, 'spearmanr': 0.060688920077400274}  
-mrpc: {'accuracy': 0.5126353790613718, 'f1': 0.46215139442231074}  
-qqp: {'accuracy': 0.48736462093862815, 'f1': 0.4409448818897637}  
-qnli: {'accuracy': 0.516245487364621}  
-rte: {'accuracy': 0.5018050541516246}  
-wnli: {'accuracy': 0.5234657039711191}  
-hans: {'accuracy': 0.48014440433212996}  
-
-rte_cola_mrpc_2 - 0:
-
-sst2: {'accuracy': 0.4693140794223827}  
-mnli: {'accuracy': 0.49458483754512633}  
-mnli_mismatched: {'accuracy': 0.4657039711191336}  
-mnli_matched: {'accuracy': 0.4548736462093863}  
-cola: {'matthews_correlation': 0.012364774004760288}  
-stsb: {'pearson': -0.02852724968206758, 'spearmanr': -0.02852724968206762}  
-mrpc: {'accuracy': 0.48014440433212996, 'f1': 0.5294117647058824}  
-qqp: {'accuracy': 0.5018050541516246, 'f1': 0.551948051948052}  
-qnli: {'accuracy': 0.5306859205776173}  
-rte: {'accuracy': 0.48375451263537905}  
-wnli: {'accuracy': 0.49458483754512633}  
-hans: {'accuracy': 0.5090252707581228}  
-
-rte_cola_mrpc_2 - 1:
-
-sst2: {'accuracy': 0.6903163950143816}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-rte_cola_mrpc_2 - 2:
-
-sst2: {'accuracy': 0.678921568627451}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': -0.03370509448285096}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8116788321167884}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6813725490196079}  
-
-rte_mrpc_cola_2 - 0:
-
-sst2: {'accuracy': 0.5451263537906137}  
-mnli: {'accuracy': 0.51985559566787}  
-mnli_mismatched: {'accuracy': 0.5090252707581228}  
-mnli_matched: {'accuracy': 0.48736462093862815}  
-cola: {'matthews_correlation': 0.030775175548196775}  
-stsb: {'pearson': -0.02148058414987434, 'spearmanr': -0.021480584149874363}  
-mrpc: {'accuracy': 0.5270758122743683, 'f1': 0.5676567656765676}  
-qqp: {'accuracy': 0.516245487364621, 'f1': 0.5812499999999999}  
-qnli: {'accuracy': 0.44404332129963897}  
-rte: {'accuracy': 0.4981949458483754}  
-wnli: {'accuracy': 0.5054151624548736}  
-hans: {'accuracy': 0.47653429602888087}  
-
-rte_mrpc_cola_2 - 1:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6813725490196079}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.07289706481174742}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6862745098039216, 'f1': 0.8134110787172011}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6813725490196079}  
-wnli: {'accuracy': 0.6862745098039216}  
-hans: {'accuracy': 0.6862745098039216}  
-
-rte_mrpc_cola_2 - 2:
-
-sst2: {'accuracy': 0.6922339405560882}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': -0.020702674026557004}  
-stsb: {'pearson': 0.046355987494247186, 'spearmanr': 0.04635598749424719}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6922339405560882}  
-rte: {'accuracy': 0.6903163950143816}  
-wnli: {'accuracy': 0.6903163950143816}  
-hans: {'accuracy': 0.6912751677852349}  
-
-mrpc_cola_rte_2 - 0:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': -0.03370509448285096}  
-stsb: {'pearson': 0.07289706481174732, 'spearmanr': 0.07289706481174744}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8116788321167884}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6813725490196079}  
-hans: {'accuracy': 0.678921568627451}  
-
-mrpc_cola_rte_2 - 1:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': -0.020702674026557004}  
-stsb: {'pearson': -0.020702674026556993, 'spearmanr': -0.020702674026557004}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6893576222435283, 'f1': 0.8161180476730988}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6903163950143816}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-mrpc_cola_rte_2 - 2:
-
-sst2: {'accuracy': 0.5595667870036101}  
-mnli: {'accuracy': 0.48014440433212996}  
-mnli_mismatched: {'accuracy': 0.5234657039711191}  
-mnli_matched: {'accuracy': 0.516245487364621}  
-cola: {'matthews_correlation': -0.10584312710122833}  
-stsb: {'pearson': 0.0024692943692118906, 'spearmanr': 0.0024692943692118914}  
-mrpc: {'accuracy': 0.5090252707581228, 'f1': 0.5036496350364963}  
-qqp: {'accuracy': 0.5234657039711191, 'f1': 0.5416666666666666}  
-qnli: {'accuracy': 0.4620938628158845}  
-rte: {'accuracy': 0.4729241877256318}  
-wnli: {'accuracy': 0.4729241877256318}  
-hans: {'accuracy': 0.5451263537906137}  
-
-mrpc_rte_cola_2 - 0:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': 0.07289706481174736, 'spearmanr': 0.07289706481174744}  
-mrpc: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qqp: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qnli: {'accuracy': 0.6862745098039216}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6813725490196079}  
-hans: {'accuracy': 0.6838235294117647}  
-
-mrpc_rte_cola_2 - 1:
-
-sst2: {'accuracy': 0.5054151624548736}  
-mnli: {'accuracy': 0.4657039711191336}  
-mnli_mismatched: {'accuracy': 0.48736462093862815}  
-mnli_matched: {'accuracy': 0.49097472924187724}  
-cola: {'matthews_correlation': -0.052496889063847384}  
-stsb: {'pearson': -0.04047242992097067, 'spearmanr': -0.04047242992097073}  
-mrpc: {'accuracy': 0.48736462093862815, 'f1': 0.47407407407407415}  
-qqp: {'accuracy': 0.4187725631768953, 'f1': 0.4429065743944637}  
-qnli: {'accuracy': 0.5342960288808665}  
-rte: {'accuracy': 0.5270758122743683}  
-wnli: {'accuracy': 0.5234657039711191}  
-hans: {'accuracy': 0.516245487364621}  
-
-mrpc_rte_cola_2 - 2:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6922339405560882}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_rte_mrpc_4 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6903163950143816}  
-mnli_matched: {'accuracy': 0.6922339405560882}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': 0.046355987494247325, 'spearmanr': 0.04635598749424719}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6903163950143816, 'f1': 0.8167895632444696}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6903163950143816}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_rte_mrpc_4 - 1:
-
-sst2: {'accuracy': 0.516245487364621}  
-mnli: {'accuracy': 0.47653429602888087}  
-mnli_mismatched: {'accuracy': 0.44404332129963897}  
-mnli_matched: {'accuracy': 0.5451263537906137}  
-cola: {'matthews_correlation': -0.03675588782019859}  
-stsb: {'pearson': -0.04612852034400084, 'spearmanr': -0.04612852034400087}  
-mrpc: {'accuracy': 0.49458483754512633, 'f1': 0.4615384615384615}  
-qqp: {'accuracy': 0.4729241877256318, 'f1': 0.44274809160305345}  
-qnli: {'accuracy': 0.5054151624548736}  
-rte: {'accuracy': 0.5451263537906137}  
-wnli: {'accuracy': 0.4981949458483754}  
-hans: {'accuracy': 0.48736462093862815}  
-
-cola_rte_mrpc_4 - 2:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': -0.03370509448285096}  
-stsb: {'pearson': -0.033705094482850945, 'spearmanr': -0.03370509448285096}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6862745098039216, 'f1': 0.8134110787172011}  
-qnli: {'accuracy': 0.6862745098039216}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_4 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': -0.020702674026557035, 'spearmanr': -0.020702674026557004}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_mrpc_rte_4 - 1:
-
-sst2: {'accuracy': 0.6862745098039216}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6813725490196079}  
-mnli_matched: {'accuracy': 0.678921568627451}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': -0.03370509448285092, 'spearmanr': -0.03370509448285096}  
-mrpc: {'accuracy': 0.6813725490196079, 'f1': 0.8104956268221574}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6813725490196079}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6813725490196079}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_4 - 2:
-
-sst2: {'accuracy': 0.5234657039711191}  
-mnli: {'accuracy': 0.47653429602888087}  
-mnli_mismatched: {'accuracy': 0.44765342960288806}  
-mnli_matched: {'accuracy': 0.4332129963898917}  
-cola: {'matthews_correlation': 0.0061673552447269655}  
-stsb: {'pearson': 0.016209499420288258, 'spearmanr': 0.016209499420288265}  
-mrpc: {'accuracy': 0.4729241877256318, 'f1': 0.4895104895104895}  
-qqp: {'accuracy': 0.48375451263537905, 'f1': 0.4946996466431095}  
-qnli: {'accuracy': 0.49458483754512633}  
-rte: {'accuracy': 0.5234657039711191}  
-wnli: {'accuracy': 0.5054151624548736}  
-hans: {'accuracy': 0.47653429602888087}  
-
-rte_cola_mrpc_4 - 0:
-
-sst2: {'accuracy': 0.51985559566787}  
-mnli: {'accuracy': 0.5342960288808665}  
-mnli_mismatched: {'accuracy': 0.49097472924187724}  
-mnli_matched: {'accuracy': 0.5451263537906137}  
-cola: {'matthews_correlation': -0.02554990052765577}  
-stsb: {'pearson': -0.030740345178928558, 'spearmanr': -0.030740345178928558}  
-mrpc: {'accuracy': 0.5415162454873647, 'f1': 0.4940239043824701}  
-qqp: {'accuracy': 0.5090252707581228, 'f1': 0.4645669291338582}  
-qnli: {'accuracy': 0.5090252707581228}  
-rte: {'accuracy': 0.4729241877256318}  
-wnli: {'accuracy': 0.4584837545126354}  
-hans: {'accuracy': 0.4620938628158845}  
-
-rte_cola_mrpc_4 - 1:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6893576222435283, 'f1': 0.8161180476730988}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6903163950143816}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-rte_cola_mrpc_4 - 2:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6813725490196079}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': 0.07289706481174742}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8116788321167884}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6813725490196079}  
-wnli: {'accuracy': 0.6862745098039216}  
-hans: {'accuracy': 0.6813725490196079}  
-
-rte_mrpc_cola_4 - 0:
-
-sst2: {'accuracy': 0.4981949458483754}  
-mnli: {'accuracy': 0.5090252707581228}  
-mnli_mismatched: {'accuracy': 0.49097472924187724}  
-mnli_matched: {'accuracy': 0.49097472924187724}  
-cola: {'matthews_correlation': -0.03414031470150926}  
-stsb: {'pearson': 0.042769005542193886, 'spearmanr': 0.04276900554219387}  
-mrpc: {'accuracy': 0.5306859205776173, 'f1': 0.5149253731343284}  
-qqp: {'accuracy': 0.48736462093862815, 'f1': 0.4817518248175182}  
-qnli: {'accuracy': 0.51985559566787}  
-rte: {'accuracy': 0.5270758122743683}  
-wnli: {'accuracy': 0.48375451263537905}  
-hans: {'accuracy': 0.4729241877256318}  
-
-rte_mrpc_cola_4 - 1:
-
-sst2: {'accuracy': 0.6862745098039216}  
-mnli: {'accuracy': 0.6813725490196079}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8116788321167884}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8116788321167884}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.678921568627451}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-rte_mrpc_cola_4 - 2:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0463559874942472}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-mrpc_cola_rte_4 - 0:
-
-sst2: {'accuracy': 0.6813725490196079}  
-mnli: {'accuracy': 0.6813725490196079}  
-mnli_mismatched: {'accuracy': 0.6862745098039216}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': 0.027747016194979744}  
-stsb: {'pearson': -0.04772486785536514, 'spearmanr': -0.04772486785536515}  
-mrpc: {'accuracy': 0.6911764705882353, 'f1': 0.8157894736842105}  
-qqp: {'accuracy': 0.678921568627451, 'f1': 0.8087591240875913}  
-qnli: {'accuracy': 0.6862745098039216}  
-rte: {'accuracy': 0.6813725490196079}  
-wnli: {'accuracy': 0.6813725490196079}  
-hans: {'accuracy': 0.6813725490196079}  
-
-mrpc_cola_rte_4 - 1:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6903163950143816}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6903163950143816}  
-hans: {'accuracy': 0.6912751677852349}  
-
-mrpc_cola_rte_4 - 2:
-
-sst2: {'accuracy': 0.49097472924187724}  
-mnli: {'accuracy': 0.48375451263537905}  
-mnli_mismatched: {'accuracy': 0.5126353790613718}  
-mnli_matched: {'accuracy': 0.5126353790613718}  
-cola: {'matthews_correlation': -0.044882188105855425}  
-stsb: {'pearson': 0.06245110015444945, 'spearmanr': 0.062451100154449476}  
-mrpc: {'accuracy': 0.5090252707581228, 'f1': 0.5}  
-qqp: {'accuracy': 0.5090252707581228, 'f1': 0.5142857142857143}  
-qnli: {'accuracy': 0.4981949458483754}  
-rte: {'accuracy': 0.49097472924187724}  
-wnli: {'accuracy': 0.5018050541516246}  
-hans: {'accuracy': 0.5342960288808665}  
-
-mrpc_rte_cola_4 - 0:
-
-sst2: {'accuracy': 0.6813725490196079}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6862745098039216}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': -0.033705094482850875, 'spearmanr': -0.03370509448285096}  
-mrpc: {'accuracy': 0.6813725490196079, 'f1': 0.8099415204678363}  
-qqp: {'accuracy': 0.678921568627451, 'f1': 0.8087591240875913}  
-qnli: {'accuracy': 0.6813725490196079}  
-rte: {'accuracy': 0.678921568627451}  
-wnli: {'accuracy': 0.678921568627451}  
-hans: {'accuracy': 0.6813725490196079}  
-
-mrpc_rte_cola_4 - 1:
-
-sst2: {'accuracy': 0.5631768953068592}  
-mnli: {'accuracy': 0.516245487364621}  
-mnli_mismatched: {'accuracy': 0.49097472924187724}  
-mnli_matched: {'accuracy': 0.516245487364621}  
-cola: {'matthews_correlation': -0.07048637879448011}  
-stsb: {'pearson': 0.02001575567799852, 'spearmanr': 0.020015755677998515}  
-mrpc: {'accuracy': 0.5703971119133574, 'f1': 0.4803493449781659}  
-qqp: {'accuracy': 0.47653429602888087, 'f1': 0.42231075697211157}  
-qnli: {'accuracy': 0.48014440433212996}  
-rte: {'accuracy': 0.5018050541516246}  
-wnli: {'accuracy': 0.48736462093862815}  
-hans: {'accuracy': 0.4657039711191336}  
-
-mrpc_rte_cola_4 - 2:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-
-
-cola_rte_mrpc_8 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6922339405560882, 'f1  ': 0.8179239931934204}
-qqp: {'accuracy': 0.6903163950143816, 'f1':   0.8167895632444696}
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6893576222435283}  
-
-cola_rte_mrpc_8 - 1:
-
-sst2: {'accuracy': 0.5018050541516246}  
-mnli: {'accuracy': 0.5451263537906137}  
-mnli_mismatched: {'accuracy': 0.5054151624548736}  
-mnli_matched: {'accuracy': 0.5306859205776173}  
-cola: {'matthews_correlation': 0.07356946744870385}  
-stsb: {'pearson': -0.05042368890050965, 'spearmanr': -0.05042368890050963}  
-mrpc: {'accuracy': 0.4693140794223827, 'f1': 0.374468085106383}  
-qqp: {'accuracy': 0.4729241877256318, 'f1': 0.4296875}  
-qnli: {'accuracy': 0.47653429602888087}  
-rte: {'accuracy': 0.5306859205776173}  
-wnli: {'accuracy': 0.47653429602888087}  
-hans: {'accuracy': 0.4981949458483754}  
-
-cola_rte_mrpc_8 - 2:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': -0.03370509448285087, 'spearmanr': -0.03370509448285096}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6813725490196079}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_8 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6903163950143816}  
-mnli_matched: {'accuracy': 0.6931927133269415}  
-cola: {'matthews_correlation': -0.020702674026557004}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1  ': 0.8174603174603174}
-qqp: {'accuracy': 0.6912751677852349, 'f1':   0.8174603174603174}
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-cola_mrpc_rte_8 - 1:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6813725490196079}  
-mnli_matched: {'accuracy': 0.6813725490196079}  
-cola: {'matthews_correlation': -0.03370509448285096}  
-stsb: {'pearson': -0.03370509448285087, 'spearmanr': -0.03370509448285096}  
-mrpc: {'accuracy': 0.6862745098039216, 'f1': 0.8134110787172011}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6813725490196079}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
-
-cola_mrpc_rte_8 - 2:
-
-sst2: {'accuracy': 0.44765342960288806}  
-mnli: {'accuracy': 0.5234657039711191}  
-mnli_mismatched: {'accuracy': 0.5451263537906137}  
-mnli_matched: {'accuracy': 0.4693140794223827}  
-cola: {'matthews_correlation': 0.017473357085451814}  
-stsb: {'pearson': -0.02668687786084359, 'spearmanr': -0.02668687786084356}  
-mrpc: {'accuracy': 0.48736462093862815, 'f1': 0.3879310344827587}  
-qqp: {'accuracy': 0.5018050541516246, 'f1': 0.42975206611570244}  
-qnli: {'accuracy': 0.4981949458483754}  
-rte: {'accuracy': 0.48375451263537905}  
-wnli: {'accuracy': 0.5306859205776173}  
-hans: {'accuracy': 0.4657039711191336}  
-
-rte_cola_mrpc_8 - 0:
-
-sst2: {'accuracy': 0.5234657039711191}  
-mnli: {'accuracy': 0.45126353790613716}  
-mnli_mismatched: {'accuracy': 0.5415162454873647}  
-mnli_matched: {'accuracy': 0.4620938628158845}  
-cola: {'matthews_correlation': -0.06491265344972247}  
-stsb: {'pearson': 0.09665299865040633, 'spearmanr': 0.09665299865040634}  
-mrpc: {'accuracy': 0.5126353790613718, 'f1': 0.48275862068965514}  
-qqp: {'accuracy': 0.5415162454873647, 'f1': 0.5207547169811321}  
-qnli: {'accuracy': 0.5415162454873647}  
-rte: {'accuracy': 0.5270758122743683}  
-wnli: {'accuracy': 0.47653429602888087}  
-hans: {'accuracy': 0.5018050541516246}  
-
-rte_cola_mrpc_8 - 1:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6922339405560882}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6903163950143816, 'f1  ': 0.8167895632444696}
-qqp: {'accuracy': 0.6912751677852349, 'f1':   0.8174603174603174}
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6903163950143816}  
-
-rte_cola_mrpc_8 - 2:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1  ': 0.8122270742358079}
-qqp: {'accuracy': 0.6838235294117647, 'f1':   0.8122270742358079}
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6862745098039216}  
-
-rte_mrpc_cola_8 - 0:
-
-sst2: {'accuracy': 0.5054151624548736}  
-mnli: {'accuracy': 0.5451263537906137}  
-mnli_mismatched: {'accuracy': 0.48014440433212996}  
-mnli_matched: {'accuracy': 0.5270758122743683}  
-cola: {'matthews_correlation': -0.037586625233629274}  
-stsb: {'pearson': -0.012220605517490029, 'spearmanr': -0.012220605517490006}  
-mrpc: {'accuracy': 0.5270758122743683, 'f1': 0.4653061224489796}  
-qqp: {'accuracy': 0.48736462093862815, 'f1': 0.4496124031007752}  
-qnli: {'accuracy': 0.5018050541516246}  
+rte_mrpc_cola_0 - 2:  
 rte: {'accuracy': 0.4657039711191336}  
-wnli: {'accuracy': 0.5487364620938628}  
-hans: {'accuracy': 0.4548736462093863}  
+mrpc: {'accuracy': 0.6862745098039216, 'f1': 0.8128654970760235}  
+cola: {'matthews_correlation': 0.5392823485107089}  
 
-rte_mrpc_cola_8 - 1:
+rte_cola_mrpc_0 - 0:  
+rte: {'accuracy': 0.6714801444043321}  
 
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.678921568627451}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': -0.04772486785536516}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1  ': 0.8122270742358079}
-qqp: {'accuracy': 0.6838235294117647, 'f1':   0.8116788321167884}
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.678921568627451}  
+rte_cola_mrpc_0 - 1:  
+rte: {'accuracy': 0.5379061371841155}  
+cola: {'matthews_correlation': 0.5683668297227801}  
 
-rte_mrpc_cola_8 - 2:
+rte_cola_mrpc_0 - 2:  
+rte: {'accuracy': 0.49458483754512633}  
+cola: {'matthews_correlation': 0.286990385783097}  
+mrpc: {'accuracy': 0.8676470588235294, 'f1': 0.9087837837837838}  
 
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1  ': 0.8174603174603174}
-qqp: {'accuracy': 0.6903163950143816, 'f1':   0.8167895632444696}
-qnli: {'accuracy': 0.6903163950143816}  
-rte: {'accuracy': 0.6922339405560882}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6903163950143816}  
+mrpc_rte_cola_0 - 0:  
+mrpc: {'accuracy': 0.8725490196078431, 'f1': 0.9097222222222222}  
 
-mrpc_cola_rte_8 - 0:
+mrpc_rte_cola_0 - 1:  
+mrpc: {'accuracy': 0.48284313725490197, 'f1': 0.615664845173042}  
+rte: {'accuracy': 0.6714801444043321}  
 
-sst2: {'accuracy': 0.6862745098039216}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6813725490196079}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1  ': 0.8122270742358079}
-qqp: {'accuracy': 0.6838235294117647, 'f1':   0.8122270742358079}
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6862745098039216}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
+mrpc_rte_cola_0 - 2:  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8101644245142002}  
+rte: {'accuracy': 0.48014440433212996}  
+cola: {'matthews_correlation': 0.5703054933279827}  
 
-mrpc_cola_rte_8 - 1:
+mrpc_cola_rte_0 - 0:  
+mrpc: {'accuracy': 0.8602941176470589, 'f1': 0.8980322003577819}  
 
-sst2: {'accuracy': 0.6922339405560882}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6903163950143816, 'f1  ': 0.8167895632444696}
-qqp: {'accuracy': 0.6912751677852349, 'f1':   0.8174603174603174}
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
+mrpc_cola_rte_0 - 1:  
+mrpc: {'accuracy': 0.7696078431372549, 'f1': 0.8535825545171339}  
+cola: {'matthews_correlation': 0.5502476813761963}  
 
-mrpc_cola_rte_8 - 2:
+mrpc_cola_rte_0 - 2:  
+mrpc: {'accuracy': 0.3137254901960784, 'f1': 0.4017094017094017}  
+cola: {'matthews_correlation': 0.3901872955343718}  
+rte: {'accuracy': 0.6895306859205776}  
 
-sst2: {'accuracy': 0.516245487364621}  
-mnli: {'accuracy': 0.49458483754512633}  
-mnli_mismatched: {'accuracy': 0.4187725631768953}  
-mnli_matched: {'accuracy': 0.5487364620938628}  
-cola: {'matthews_correlation': 0.08707942113582204}  
-stsb: {'pearson': -0.11872825455614942, 'spearmanr': -0.11872825455614938}  
-mrpc: {'accuracy': 0.5054151624548736, 'f1': 0.4981684981684981}  
-qqp: {'accuracy': 0.51985559566787, 'f1': 0.4981132075471698}  
-qnli: {'accuracy': 0.49097472924187724}  
+cola_rte_mrpc_0 - 0:  
+cola: {'matthews_correlation': 0.5807606001872874}  
+
+cola_rte_mrpc_0 - 1:  
+cola: {'matthews_correlation': 0.47465938074214753}  
+rte: {'accuracy': 0.6462093862815884}  
+
+cola_rte_mrpc_0 - 2:  
+cola: {'matthews_correlation': 0.172517984370661}  
+rte: {'accuracy': 0.5018050541516246}  
+mrpc: {'accuracy': 0.8676470588235294, 'f1': 0.9072164948453608}  
+
+cola_mrpc_rte_0 - 0:  
+cola: {'matthews_correlation': 0.5573424050983508}  
+
+cola_mrpc_rte_0 - 1:  
+cola: {'matthews_correlation': 0.24798736849128378}  
+mrpc: {'accuracy': 0.8921568627450981, 'f1': 0.9251700680272108}  
+
+cola_mrpc_rte_0 - 2:  
+cola: {'matthews_correlation': 0.2009402852227427}  
+mrpc: {'accuracy': 0.5465686274509803, 'f1': 0.6476190476190475}  
+rte: {'accuracy': 0.5848375451263538}  
+
+rte_cola_mrpc_1 - 0:  
+rte: {'accuracy': 0.6462093862815884}  
+
+rte_cola_mrpc_1 - 1:  
+rte: {'accuracy': 0.48014440433212996}  
+cola: {'matthews_correlation': 0.5963273779713936}  
+
+rte_cola_mrpc_1 - 2:  
+rte: {'accuracy': 0.516245487364621}  
+cola: {'matthews_correlation': 0.27308430229823}  
+mrpc: {'accuracy': 0.8529411764705882, 'f1': 0.8989898989898989}  
+
+mrpc_rte_cola_1 - 0:  
+mrpc: {'accuracy': 0.8357843137254902, 'f1': 0.8850771869639793}  
+
+mrpc_rte_cola_1 - 1:  
+mrpc: {'accuracy': 0.5171568627450981, 'f1': 0.6643952299829642}  
+rte: {'accuracy': 0.6606498194945848}  
+
+mrpc_rte_cola_1 - 2:  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8140556368960467}  
 rte: {'accuracy': 0.4729241877256318}  
-wnli: {'accuracy': 0.5523465703971119}  
-hans: {'accuracy': 0.5270758122743683}  
+cola: {'matthews_correlation': 0.5930551868478077}  
 
-mrpc_rte_cola_8 - 0:
+mrpc_cola_rte_1 - 0:  
+mrpc: {'accuracy': 0.8529411764705882, 'f1': 0.8936170212765957}  
 
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
+mrpc_cola_rte_1 - 1:  
+mrpc: {'accuracy': 0.7107843137254902, 'f1': 0.8249258160237388}  
+cola: {'matthews_correlation': 0.550090073200501}  
+
+mrpc_cola_rte_1 - 2:  
+mrpc: {'accuracy': 0.3872549019607843, 'f1': 0.5059288537549408}  
+cola: {'matthews_correlation': 0.45285537703926815}  
+rte: {'accuracy': 0.6498194945848376}  
+
+cola_rte_mrpc_1 - 0:  
+cola: {'matthews_correlation': 0.5713110471171509}  
+
+cola_rte_mrpc_1 - 1:  
+cola: {'matthews_correlation': 0.4327177593019224}  
+rte: {'accuracy': 0.6498194945848376}  
+
+cola_rte_mrpc_1 - 2:  
+cola: {'matthews_correlation': 0.3556704575157783}  
+rte: {'accuracy': 0.4981949458483754}  
+mrpc: {'accuracy': 0.8504901960784313, 'f1': 0.897133220910624}  
+
+cola_mrpc_rte_1 - 0:  
+cola: {'matthews_correlation': 0.5687360893544328}  
+
+cola_mrpc_rte_1 - 1:  
+cola: {'matthews_correlation': 0.19397631815298078}  
+mrpc: {'accuracy': 0.8725490196078431, 'f1': 0.9106529209621993}  
+
+cola_mrpc_rte_1 - 2:  
+cola: {'matthews_correlation': -0.16662962794023017}  
+mrpc: {'accuracy': 0.27941176470588236, 'f1': 0.32568807339449546}  
+rte: {'accuracy': 0.6606498194945848}  
+
+rte_mrpc_cola_2 - 0:  
+rte: {'accuracy': 0.6931407942238267}  
+
+rte_mrpc_cola_2 - 1:  
+rte: {'accuracy': 0.5018050541516246}  
+mrpc: {'accuracy': 0.8455882352941176, 'f1': 0.8908145580589255}  
+
+rte_mrpc_cola_2 - 2:  
+rte: {'accuracy': 0.4259927797833935}  
+mrpc: {'accuracy': 0.7377450980392157, 'f1': 0.8386123680241326}  
+cola: {'matthews_correlation': 0.5805514135255713}  
+
+rte_cola_mrpc_2 - 0:  
+rte: {'accuracy': 0.6534296028880866}  
+
+rte_cola_mrpc_2 - 1:  
+rte: {'accuracy': 0.4729241877256318}  
+cola: {'matthews_correlation': 0.5576106804001113}  
+
+rte_cola_mrpc_2 - 2:  
+rte: {'accuracy': 0.49097472924187724}  
+cola: {'matthews_correlation': 0.2555691184360863}  
+mrpc: {'accuracy': 0.8676470588235294, 'f1': 0.909090909090909}  
+
+mrpc_rte_cola_2 - 0:  
+mrpc: {'accuracy': 0.8553921568627451, 'f1': 0.9005059021922428}  
+
+mrpc_rte_cola_2 - 1:  
+mrpc: {'accuracy': 0.33088235294117646, 'f1': 0.45070422535211274}  
+rte: {'accuracy': 0.6859205776173285}  
+
+mrpc_rte_cola_2 - 2:  
+mrpc: {'accuracy': 0.6593137254901961, 'f1': 0.7946824224519942}  
+rte: {'accuracy': 0.4729241877256318}  
+cola: {'matthews_correlation': 0.5554433905906734}  
+
+mrpc_cola_rte_2 - 0:  
+mrpc: {'accuracy': 0.8504901960784313, 'f1': 0.8908765652951698}  
+
+mrpc_cola_rte_2 - 1:  
+mrpc: {'accuracy': 0.7205882352941176, 'f1': 0.8288288288288289}  
+cola: {'matthews_correlation': 0.544421655829423}  
+
+mrpc_cola_rte_2 - 2:  
+mrpc: {'accuracy': 0.40931372549019607, 'f1': 0.5374280230326295}  
+cola: {'matthews_correlation': 0.4418715794191063}  
+rte: {'accuracy': 0.6498194945848376}  
+
+cola_rte_mrpc_2 - 0:  
+cola: {'matthews_correlation': 0.5707798240133651}  
+
+cola_rte_mrpc_2 - 1:  
+cola: {'matthews_correlation': 0.5076423377649488}  
+rte: {'accuracy': 0.6931407942238267}  
+
+cola_rte_mrpc_2 - 2:  
 cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6838235294117647, 'f1  ': 0.8122270742358079}
-qqp: {'accuracy': 0.6838235294117647, 'f1':   0.8122270742358079}
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
+rte: {'accuracy': 0.5090252707581228}  
+mrpc: {'accuracy': 0.8823529411764706, 'f1': 0.916083916083916}  
 
-mrpc_rte_cola_8 - 1:
+cola_mrpc_rte_2 - 0:  
+cola: {'matthews_correlation': 0.5880544551678445}  
 
-sst2: {'accuracy': 0.5018050541516246}  
-mnli: {'accuracy': 0.5126353790613718}  
-mnli_mismatched: {'accuracy': 0.5379061371841155}  
-mnli_matched: {'accuracy': 0.47653429602888087}  
-cola: {'matthews_correlation': 0.12909895816611464}  
-stsb: {'pearson': 0.11188275502558315, 'spearmanr': 0.1118827550255831}  
-mrpc: {'accuracy': 0.4584837545126354, 'f1': 0.46043165467625896}  
-qqp: {'accuracy': 0.5595667870036101, 'f1': 0.551470588235294}  
-qnli: {'accuracy': 0.49458483754512633}  
+cola_mrpc_rte_2 - 1:  
+cola: {'matthews_correlation': 0.2144031318051486}  
+mrpc: {'accuracy': 0.8799019607843137, 'f1': 0.9162393162393162}  
+
+cola_mrpc_rte_2 - 2:  
+cola: {'matthews_correlation': 0.40026677748332246}  
+mrpc: {'accuracy': 0.27450980392156865, 'f1': 0.22105263157894736}  
+rte: {'accuracy': 0.6462093862815884}  
+
+
+
+
+
+
+rte_mrpc_cola_3 - 0:  
+rte: {'accuracy': 0.631768953068592}  
+
+rte_mrpc_cola_3 - 1:  
+rte: {'accuracy': 0.48375451263537905}  
+mrpc: {'accuracy': 0.8725490196078431, 'f1': 0.9084507042253521}  
+
+rte_mrpc_cola_3 - 2:  
+rte: {'accuracy': 0.4151624548736462}  
+mrpc: {'accuracy': 0.7181372549019608, 'f1': 0.8286140089418779}  
+cola: {'matthews_correlation': 0.5578770438298012}  
+
+rte_cola_mrpc_3 - 0:  
+rte: {'accuracy': 0.6750902527075813}  
+
+rte_cola_mrpc_3 - 1:  
+rte: {'accuracy': 0.5451263537906137}  
+cola: {'matthews_correlation': 0.5600900419522739}  
+
+rte_cola_mrpc_3 - 2:  
+rte: {'accuracy': 0.48014440433212996}  
+cola: {'matthews_correlation': 0.285378633463526}  
+mrpc: {'accuracy': 0.8529411764705882, 'f1': 0.9006622516556292}  
+
+mrpc_rte_cola_3 - 0:  
+mrpc: {'accuracy': 0.8700980392156863, 'f1': 0.9087779690189328}  
+
+mrpc_rte_cola_3 - 1:  
+mrpc: {'accuracy': 0.26715686274509803, 'f1': 0.36247334754797444}  
+rte: {'accuracy': 0.6570397111913358}  
+
+mrpc_rte_cola_3 - 2:  
+mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.809453471196455}  
+rte: {'accuracy': 0.48014440433212996}  
+cola: {'matthews_correlation': 0.5474865115851942}  
+
+mrpc_cola_rte_3 - 0:  
+mrpc: {'accuracy': 0.8504901960784313, 'f1': 0.8904847396768403}  
+
+mrpc_cola_rte_3 - 1:  
+mrpc: {'accuracy': 0.7818627450980392, 'f1': 0.8589540412044374}  
+cola: {'matthews_correlation': 0.5675730029368427}  
+
+mrpc_cola_rte_3 - 2:  
+mrpc: {'accuracy': 0.40441176470588236, 'f1': 0.5110663983903421}  
+cola: {'matthews_correlation': 0.4954065497058631}  
+rte: {'accuracy': 0.6642599277978339}  
+
+cola_rte_mrpc_3 - 0:  
+cola: {'matthews_correlation': 0.5640063794282216}  
+
+cola_rte_mrpc_3 - 1:  
+cola: {'matthews_correlation': 0.46794560733473306}  
+rte: {'accuracy': 0.6895306859205776}  
+
+cola_rte_mrpc_3 - 2:  
+cola: {'matthews_correlation': 0.24317389695801792}  
+rte: {'accuracy': 0.4693140794223827}  
+mrpc: {'accuracy': 0.8578431372549019, 'f1': 0.9026845637583893}  
+
+cola_mrpc_rte_3 - 0:  
+cola: {'matthews_correlation': 0.5626727648075698}  
+
+cola_mrpc_rte_3 - 1:  
+cola: {'matthews_correlation': 0.3407791173171151}  
+mrpc: {'accuracy': 0.8480392156862745, 'f1': 0.8938356164383561}  
+
+cola_mrpc_rte_3 - 2:  
+cola: {'matthews_correlation': 0.4497562563404004}  
+mrpc: {'accuracy': 0.4485294117647059, 'f1': 0.5778611632270169}  
+rte: {'accuracy': 0.6823104693140795}  
+
+
+rte_mrpc_cola_4 - 0:  
+rte: {'accuracy': 0.6606498194945848}  
+
+rte_mrpc_cola_4 - 1:  
+rte: {'accuracy': 0.516245487364621}  
+mrpc: {'accuracy': 0.8602941176470589, 'f1': 0.9008695652173914}  
+
+rte_mrpc_cola_4 - 2:  
+rte: {'accuracy': 0.4693140794223827}  
+mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8111273792093704}  
+cola: {'matthews_correlation': 0.5881989399089292}  
+
+rte_cola_mrpc_4 - 0:  
+rte: {'accuracy': 0.6895306859205776}  
+
+rte_cola_mrpc_4 - 1:  
 rte: {'accuracy': 0.48736462093862815}  
-wnli: {'accuracy': 0.47653429602888087}  
-hans: {'accuracy': 0.4584837545126354}  
+cola: {'matthews_correlation': 0.5750821529922306}  
 
-mrpc_rte_cola_8 - 2:
+rte_cola_mrpc_4 - 2:  
+rte: {'accuracy': 0.48736462093862815}  
+cola: {'matthews_correlation': 0.17687899023802509}  
+mrpc: {'accuracy': 0.8553921568627451, 'f1': 0.9005059021922428}  
 
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1  ': 0.8174603174603174}
-qqp: {'accuracy': 0.6912751677852349, 'f1':   0.8174603174603174}
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6903163950143816}  
+mrpc_rte_cola_4 - 0:  
+mrpc: {'accuracy': 0.8357843137254902, 'f1': 0.8830715532286212}  
 
-cola_rte_mrpc_12 - 0:
+mrpc_rte_cola_4 - 1:  
+mrpc: {'accuracy': 0.38480392156862747, 'f1': 0.4803312629399586}  
+rte: {'accuracy': 0.6173285198555957}  
 
-sst2: {'accuracy': 0.7411313518696069}  
-mnli: {'accuracy': 0.7353787152444871}  
-mnli_mismatched: {'accuracy': 0.7305848513902206}  
-mnli_matched: {'accuracy': 0.7392138063279002}  
-cola: {'matthews_correlation': 0.3158151403811503}  
-stsb: {'pearson': 0.3247534208263474, 'spearmanr': 0.3247534208263467}  
-mrpc: {'accuracy': 0.7315436241610739, 'f1': 0.8179453836150845}  
-qqp: {'accuracy': 0.7344199424736337, 'f1': 0.8197787898503578}  
-qnli: {'accuracy': 0.7430488974113135}  
-rte: {'accuracy': 0.7363374880153404}  
-wnli: {'accuracy': 0.7468839884947267}  
-hans: {'accuracy': 0.7440076701821668}  
+mrpc_rte_cola_4 - 2:  
+mrpc: {'accuracy': 0.6936274509803921, 'f1': 0.8114630467571644}  
+rte: {'accuracy': 0.5776173285198556}  
+cola: {'matthews_correlation': 0.5364243566130295}  
 
-cola_rte_mrpc_12 - 1:
+mrpc_cola_rte_4 - 0:  
+mrpc: {'accuracy': 0.8406862745098039, 'f1': 0.8914858096828046}  
 
-sst2: {'accuracy': 0.5018050541516246}  
-mnli: {'accuracy': 0.5451263537906137}  
-mnli_mismatched: {'accuracy': 0.5415162454873647}  
-mnli_matched: {'accuracy': 0.555956678700361}  
-cola: {'matthews_correlation': 0.04719645848956002}  
-stsb: {'pearson': 0.022787854972042016, 'spearmanr': 0.02278785497204201}  
-mrpc: {'accuracy': 0.5379061371841155, 'f1': 0.5151515151515151}  
-qqp: {'accuracy': 0.5776173285198556, 'f1': 0.5411764705882351}  
-qnli: {'accuracy': 0.5595667870036101}  
-rte: {'accuracy': 0.555956678700361}  
-wnli: {'accuracy': 0.5487364620938628}  
-hans: {'accuracy': 0.5451263537906137}  
+mrpc_cola_rte_4 - 1:  
+mrpc: {'accuracy': 0.696078431372549, 'f1': 0.8181818181818181}  
+cola: {'matthews_correlation': 0.5323002583628187}  
 
-cola_rte_mrpc_12 - 2:
+mrpc_cola_rte_4 - 2:  
+mrpc: {'accuracy': 0.44607843137254904, 'f1': 0.5461847389558233}  
+cola: {'matthews_correlation': 0.509956265936642}  
+rte: {'accuracy': 0.6931407942238267}  
 
-sst2: {'accuracy': 0.6200980392156863}  
-mnli: {'accuracy': 0.6274509803921569}  
-mnli_mismatched: {'accuracy': 0.6593137254901961}  
-mnli_matched: {'accuracy': 0.6568627450980392}  
-cola: {'matthews_correlation': 0.14824582297069466}  
-stsb: {'pearson': 0.15605162849186005, 'spearmanr': 0.15605162849185994}  
-mrpc: {'accuracy': 0.6495098039215687, 'f1': 0.7636363636363637}  
-qqp: {'accuracy': 0.6495098039215687, 'f1': 0.7604690117252931}  
-qnli: {'accuracy': 0.6544117647058824}  
-rte: {'accuracy': 0.6421568627450981}  
-wnli: {'accuracy': 0.6544117647058824}  
-hans: {'accuracy': 0.6348039215686274}  
+cola_rte_mrpc_4 - 0:  
+cola: {'matthews_correlation': 0.5294768861655004}  
 
-cola_mrpc_rte_12 - 0:
+cola_rte_mrpc_4 - 1:  
+cola: {'matthews_correlation': 0.500543339002461}  
+rte: {'accuracy': 0.631768953068592}  
 
-sst2: {'accuracy': 0.7152444870565676}  
-mnli: {'accuracy': 0.7353787152444871}  
-mnli_mismatched: {'accuracy': 0.7334611697027804}  
-mnli_matched: {'accuracy': 0.7171620325982742}  
-cola: {'matthews_correlation': 0.26337476887974637}  
-stsb: {'pearson': 0.275140099303493, 'spearmanr': 0.27514009930349204}  
-mrpc: {'accuracy': 0.7344199424736337, 'f1': 0.8234544295729765}  
-qqp: {'accuracy': 0.7392138063279002, 'f1': 0.826530612244898}  
-qnli: {'accuracy': 0.7229146692233941}  
-rte: {'accuracy': 0.7200383509108341}  
-wnli: {'accuracy': 0.7334611697027804}  
-hans: {'accuracy': 0.7305848513902206}  
+cola_rte_mrpc_4 - 2:  
+cola: {'matthews_correlation': 0.1902493163456578}  
+rte: {'accuracy': 0.48375451263537905}  
+mrpc: {'accuracy': 0.8651960784313726, 'f1': 0.905982905982906}  
 
-cola_mrpc_rte_12 - 1:
+cola_mrpc_rte_4 - 0:  
+cola: {'matthews_correlation': 0.5469075065870133}  
 
-sst2: {'accuracy': 0.6862745098039216}  
-mnli: {'accuracy': 0.7107843137254902}  
-mnli_mismatched: {'accuracy': 0.6936274509803921}  
-mnli_matched: {'accuracy': 0.7107843137254902}  
-cola: {'matthews_correlation': 0.25613242484536514}  
-stsb: {'pearson': 0.2133117010376221, 'spearmanr': 0.213311701037622}  
-mrpc: {'accuracy': 0.7181372549019608, 'f1': 0.8105436573311366}  
-qqp: {'accuracy': 0.6985294117647058, 'f1': 0.7911714770797963}  
-qnli: {'accuracy': 0.7034313725490197}  
-rte: {'accuracy': 0.7034313725490197}  
-wnli: {'accuracy': 0.7083333333333334}  
-hans: {'accuracy': 0.7083333333333334}  
+cola_mrpc_rte_4 - 1:  
+cola: {'matthews_correlation': 0.3068048852377893}  
+mrpc: {'accuracy': 0.8602941176470589, 'f1': 0.9025641025641027}  
 
-cola_mrpc_rte_12 - 2:
+cola_mrpc_rte_4 - 2:  
+cola: {'matthews_correlation': -0.2549503043045016}  
+mrpc: {'accuracy': 0.2181372549019608, 'f1': 0.15831134564643798}  
+rte: {'accuracy': 0.6606498194945848}  
 
-sst2: {'accuracy': 0.51985559566787}  
-mnli: {'accuracy': 0.5451263537906137}  
-mnli_mismatched: {'accuracy': 0.5270758122743683}  
-mnli_matched: {'accuracy': 0.5451263537906137}  
-cola: {'matthews_correlation': 0.08295926165919344}  
-stsb: {'pearson': 0.02888692335755636, 'spearmanr': 0.028886923357556347}  
-mrpc: {'accuracy': 0.51985559566787, 'f1': 0.4981132075471698}  
-qqp: {'accuracy': 0.516245487364621, 'f1': 0.49624060150375937}  
-qnli: {'accuracy': 0.5054151624548736}  
-rte: {'accuracy': 0.5054151624548736}  
-wnli: {'accuracy': 0.5126353790613718}  
-hans: {'accuracy': 0.5126353790613718}  
 
-rte_cola_mrpc_12 - 0:
+rte_mrpc_cola_5 - 0:  
+rte: {'accuracy': 0.6101083032490975}  
 
-sst2: {'accuracy': 0.5667870036101083}  
-mnli: {'accuracy': 0.5415162454873647}  
-mnli_mismatched: {'accuracy': 0.5776173285198556}  
-mnli_matched: {'accuracy': 0.5451263537906137}  
-cola: {'matthews_correlation': 0.14326770638679345}  
-stsb: {'pearson': 0.16691077933768284, 'spearmanr': 0.1669107793376828}  
-mrpc: {'accuracy': 0.5342960288808665, 'f1': 0.5057471264367815}  
-qqp: {'accuracy': 0.5379061371841155, 'f1': 0.5328467153284672}  
-qnli: {'accuracy': 0.5776173285198556}  
-rte: {'accuracy': 0.5812274368231047}  
-wnli: {'accuracy': 0.5234657039711191}  
-hans: {'accuracy': 0.5812274368231047}  
+rte_mrpc_cola_5 - 1:  
+rte: {'accuracy': 0.5126353790613718}  
+mrpc: {'accuracy': 0.8357843137254902, 'f1': 0.8842832469775476}  
 
-rte_cola_mrpc_12 - 1:
+rte_mrpc_cola_5 - 2:  
+rte: {'accuracy': 0.4729241877256318}  
+mrpc: {'accuracy': 0.6862745098039216, 'f1': 0.8134110787172011}  
+cola: {'matthews_correlation': 0.5258978858175564}  
 
-sst2: {'accuracy': 0.6797698945349953}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6826462128475551}  
-mnli_matched: {'accuracy': 0.6864813039309684}  
-cola: {'matthews_correlation': 0.031891442117689926}  
-stsb: {'pearson': 0.04510120936906282, 'spearmanr': 0.04510120936906261}  
-mrpc: {'accuracy': 0.6883988494726749, 'f1': 0.8137535816618912}  
-qqp: {'accuracy': 0.6864813039309684, 'f1': 0.8123924268502583}  
-qnli: {'accuracy': 0.6883988494726749}  
-rte: {'accuracy': 0.6826462128475551}  
-wnli: {'accuracy': 0.6807286673058485}  
-hans: {'accuracy': 0.6845637583892618}  
+rte_cola_mrpc_5 - 0:  
+rte: {'accuracy': 0.6462093862815884}  
 
-rte_cola_mrpc_12 - 2:
+rte_cola_mrpc_5 - 1:  
+rte: {'accuracy': 0.6859205776173285}  
+cola: {'matthews_correlation': 0.5290037338732806}  
 
-sst2: {'accuracy': 0.6715686274509803}  
-mnli: {'accuracy': 0.678921568627451}  
-mnli_mismatched: {'accuracy': 0.6617647058823529}  
-mnli_matched: {'accuracy': 0.6666666666666666}  
-cola: {'matthews_correlation': 0.25825462352371753}  
-stsb: {'pearson': 0.2404193989862076, 'spearmanr': 0.24041939898620754}  
-mrpc: {'accuracy': 0.6813725490196079, 'f1': 0.7789115646258503}  
-qqp: {'accuracy': 0.6715686274509803, 'f1': 0.7751677852348994}  
-qnli: {'accuracy': 0.6715686274509803}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6593137254901961}  
-hans: {'accuracy': 0.6813725490196079}  
+rte_cola_mrpc_5 - 2:  
+rte: {'accuracy': 0.48375451263537905}  
+cola: {'matthews_correlation': 0.2817531644646134}  
+mrpc: {'accuracy': 0.8406862745098039, 'f1': 0.8881239242685025}  
 
-rte_mrpc_cola_12 - 0:
+mrpc_rte_cola_5 - 0:  
+mrpc: {'accuracy': 0.8627450980392157, 'f1': 0.903448275862069}  
 
-sst2: {'accuracy': 0.5306859205776173}  
-mnli: {'accuracy': 0.5451263537906137}  
-mnli_mismatched: {'accuracy': 0.5415162454873647}  
-mnli_matched: {'accuracy': 0.5523465703971119}  
-cola: {'matthews_correlation': 0.12030713608348795}  
-stsb: {'pearson': 0.16362650796397646, 'spearmanr': 0.16362650796397654}  
-mrpc: {'accuracy': 0.5703971119133574, 'f1': 0.5672727272727273}  
-qqp: {'accuracy': 0.5703971119133574, 'f1': 0.5734767025089607}  
-qnli: {'accuracy': 0.5667870036101083}  
-rte: {'accuracy': 0.5595667870036101}  
-wnli: {'accuracy': 0.5415162454873647}  
-hans: {'accuracy': 0.5667870036101083}  
+mrpc_rte_cola_5 - 1:  
+mrpc: {'accuracy': 0.4877450980392157, 'f1': 0.6287744227353463}  
+rte: {'accuracy': 0.6750902527075813}  
 
-rte_mrpc_cola_12 - 1:
+mrpc_rte_cola_5 - 2:  
+mrpc: {'accuracy': 0.6764705882352942, 'f1': 0.8064516129032258}  
+rte: {'accuracy': 0.4981949458483754}  
+cola: {'matthews_correlation': 0.5651604238862242}  
 
-sst2: {'accuracy': 0.7132352941176471}  
-mnli: {'accuracy': 0.6887254901960784}  
-mnli_mismatched: {'accuracy': 0.7083333333333334}  
-mnli_matched: {'accuracy': 0.7083333333333334}  
-cola: {'matthews_correlation': 0.2259249146641944}  
-stsb: {'pearson': 0.29878821349110896, 'spearmanr': 0.2987882134911085}  
-mrpc: {'accuracy': 0.6985294117647058, 'f1': 0.7932773109243697}  
-qqp: {'accuracy': 0.7009803921568627, 'f1': 0.7966666666666666}  
-qnli: {'accuracy': 0.7034313725490197}  
-rte: {'accuracy': 0.7034313725490197}  
-wnli: {'accuracy': 0.678921568627451}  
-hans: {'accuracy': 0.7303921568627451}  
+mrpc_cola_rte_5 - 0:  
+mrpc: {'accuracy': 0.8480392156862745, 'f1': 0.8912280701754387}  
 
-rte_mrpc_cola_12 - 2:
+mrpc_cola_rte_5 - 1:  
+mrpc: {'accuracy': 0.6911764705882353, 'f1': 0.8157894736842105}  
+cola: {'matthews_correlation': 0.5367676459034164}  
 
-sst2: {'accuracy': 0.6855225311601151}  
-mnli: {'accuracy': 0.6864813039309684}  
-mnli_mismatched: {'accuracy': 0.6864813039309684}  
-mnli_matched: {'accuracy': 0.6864813039309684}  
-cola: {'matthews_correlation': -0.010997352316591035}  
-stsb: {'pearson': 0.02740894602853879, 'spearmanr': 0.027408946028538616}  
-mrpc: {'accuracy': 0.6883988494726749, 'f1': 0.8150256118383608}  
-qqp: {'accuracy': 0.6903163950143816, 'f1': 0.815954415954416}  
-qnli: {'accuracy': 0.6893576222435283}  
-rte: {'accuracy': 0.6893576222435283}  
-wnli: {'accuracy': 0.6874400767018217}  
-hans: {'accuracy': 0.6855225311601151}  
+mrpc_cola_rte_5 - 2:  
+mrpc: {'accuracy': 0.5147058823529411, 'f1': 0.6526315789473685}  
+cola: {'matthews_correlation': 0.4376793819287724}  
+rte: {'accuracy': 0.592057761732852}  
 
-mrpc_cola_rte_12 - 0:
+cola_rte_mrpc_5 - 0:  
+cola: {'matthews_correlation': 0.5390406008281052}  
 
-sst2: {'accuracy': 0.6764705882352942}  
-mnli: {'accuracy': 0.6691176470588235}  
-mnli_mismatched: {'accuracy': 0.6887254901960784}  
-mnli_matched: {'accuracy': 0.6936274509803921}  
-cola: {'matthews_correlation': 0.2675153263215169}  
-stsb: {'pearson': 0.2592941016219374, 'spearmanr': 0.25929410162193717}  
-mrpc: {'accuracy': 0.6691176470588235, 'f1': 0.7652173913043476}  
-qqp: {'accuracy': 0.6764705882352942, 'f1': 0.7724137931034483}  
-qnli: {'accuracy': 0.6764705882352942}  
-rte: {'accuracy': 0.6985294117647058}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6740196078431373}  
+cola_rte_mrpc_5 - 1:  
+cola: {'matthews_correlation': 0.5155338105766099}  
+rte: {'accuracy': 0.6859205776173285}  
 
-mrpc_cola_rte_12 - 1:
+cola_rte_mrpc_5 - 2:  
+cola: {'matthews_correlation': 0.19600053498374753}  
+rte: {'accuracy': 0.49458483754512633}  
+mrpc: {'accuracy': 0.8455882352941176, 'f1': 0.8930390492359932}  
 
-sst2: {'accuracy': 0.6922339405560882}  
-mnli: {'accuracy': 0.6903163950143816}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.07380739515541786}  
-stsb: {'pearson': -0.007887379670285044, 'spearmanr': -0.007887379670285008}  
-mrpc: {'accuracy': 0.6941514860977949, 'f1': 0.8188529244747302}  
-qqp: {'accuracy': 0.6893576222435283, 'f1': 0.8161180476730988}  
-qnli: {'accuracy': 0.6922339405560882}  
-rte: {'accuracy': 0.6903163950143816}  
-wnli: {'accuracy': 0.6903163950143816}  
-hans: {'accuracy': 0.6912751677852349}  
+cola_mrpc_rte_5 - 0:  
+cola: {'matthews_correlation': 0.5134084664186066}  
 
-mrpc_cola_rte_12 - 2:
+cola_mrpc_rte_5 - 1:  
+cola: {'matthews_correlation': 0.3466962656536044}  
+mrpc: {'accuracy': 0.8578431372549019, 'f1': 0.9023569023569024}  
 
-sst2: {'accuracy': 0.5451263537906137}  
-mnli: {'accuracy': 0.5379061371841155}  
-mnli_mismatched: {'accuracy': 0.5306859205776173}  
-mnli_matched: {'accuracy': 0.4981949458483754}  
-cola: {'matthews_correlation': -0.060681595668930534}  
-stsb: {'pearson': 0.11395530823022536, 'spearmanr': 0.11395530823022539}  
-mrpc: {'accuracy': 0.5379061371841155, 'f1': 0.518796992481203}  
-qqp: {'accuracy': 0.5306859205776173, 'f1': 0.5112781954887218}  
-qnli: {'accuracy': 0.5126353790613718}  
+cola_mrpc_rte_5 - 2:  
+cola: {'matthews_correlation': 0.41167162614728725}  
+mrpc: {'accuracy': 0.45098039215686275, 'f1': 0.5956678700361011}  
+rte: {'accuracy': 0.6425992779783394}  
+
+rte_mrpc_cola_6 - 0:  
+rte: {'accuracy': 0.6678700361010831}  
+
+rte_mrpc_cola_6 - 1:  
 rte: {'accuracy': 0.51985559566787}  
-wnli: {'accuracy': 0.5523465703971119  }
-hans: {'accuracy': 0.5234657039711191}  
+mrpc: {'accuracy': 0.8235294117647058, 'f1': 0.875}  
 
-mrpc_rte_cola_12 - 0:
-
-sst2: {'accuracy': 0.7107843137254902}  
-mnli: {'accuracy': 0.7009803921568627}  
-mnli_mismatched: {'accuracy': 0.696078431372549}  
-mnli_matched: {'accuracy': 0.6936274509803921}  
-cola: {'matthews_correlation': 0.2765050249633253}  
-stsb: {'pearson': 0.3164473181580813, 'spearmanr': 0.3164473181580812}  
-mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.7879799666110183}  
-qqp: {'accuracy': 0.7107843137254902, 'f1': 0.804635761589404}  
-qnli: {'accuracy': 0.7034313725490197}  
-rte: {'accuracy': 0.7058823529411765}  
-wnli: {'accuracy': 0.7058823529411765}  
-hans: {'accuracy': 0.7303921568627451}  
-
-mrpc_rte_cola_12 - 1:
-
-sst2: {'accuracy': 0.5415162454873647}  
-mnli: {'accuracy': 0.5415162454873647}  
-mnli_mismatched: {'accuracy': 0.51985559566787}  
-mnli_matched: {'accuracy': 0.5306859205776173}  
-cola: {'matthews_correlation': 0.06491265344972247}  
-stsb: {'pearson': 0.07008569489090426, 'spearmanr': 0.07008569489090423}  
-mrpc: {'accuracy': 0.5703971119133574, 'f1': 0.5576208178438661}  
-qqp: {'accuracy': 0.5415162454873647, 'f1': 0.5415162454873647}  
-qnli: {'accuracy': 0.5342960288808665}  
-rte: {'accuracy': 0.5234657039711191}  
-wnli: {'accuracy': 0.555956678700361}  
-hans: {'accuracy': 0.5631768953068592}  
-
-mrpc_rte_cola_12 - 2:
-
-sst2: {'accuracy': 0.6903163950143816}  
-mnli: {'accuracy': 0.6903163950143816}  
-mnli_mismatched: {'accuracy': 0.6883988494726749}  
-mnli_matched: {'accuracy': 0.6826462128475551}  
-cola: {'matthews_correlation': 0.0463559874942472}  
-stsb: {'pearson': -0.05083309473400868, 'spearmanr': -0.05083309473400848}  
-mrpc: {'accuracy': 0.6883988494726749, 'f1': 0.8154457694491766}  
-qqp: {'accuracy': 0.6855225311601151, 'f1': 0.8134243458475541}  
-qnli: {'accuracy': 0.6922339405560882}  
-rte: {'accuracy': 0.6941514860977949}  
-wnli: {'accuracy': 0.6893576222435283}  
-hans: {'accuracy': 0.6903163950143816} 
-
-
-
-
-
-Results pt 2.
-
-cola_rte_mrpc_0 - 0:
-
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
-
-rte_cola_mrpc_0 - 0:
-
-sst2: {'accuracy': 0.4729241877256318}  
-mnli: {'accuracy': 0.4729241877256318}  
-mnli_mismatched: {'accuracy': 0.4729241877256318}  
-mnli_matched: {'accuracy': 0.4729241877256318}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.4729241877256318, 'f1': 0.642156862745098}  
-qqp: {'accuracy': 0.4729241877256318, 'f1': 0.642156862745098}  
-qnli: {'accuracy': 0.4729241877256318}  
+rte_mrpc_cola_6 - 2:  
 rte: {'accuracy': 0.4729241877256318}  
-wnli: {'accuracy': 0.4729241877256318}  
-hans: {'accuracy': 0.4729241877256318}  
+mrpc: {'accuracy': 0.696078431372549, 'f1': 0.8181818181818181}  
+cola: {'matthews_correlation': 0.5037810327397391}  
 
-rte_cola_mrpc_0 - 1:
+rte_cola_mrpc_6 - 0:  
+rte: {'accuracy': 0.6859205776173285}  
 
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
+rte_cola_mrpc_6 - 1:  
+rte: {'accuracy': 0.6570397111913358}  
+cola: {'matthews_correlation': 0.48061177250450887}  
 
-rte_cola_mrpc_0 - 0:
+rte_cola_mrpc_6 - 2:  
+rte: {'accuracy': 0.516245487364621}  
+cola: {'matthews_correlation': 0.29025129814536477}  
+mrpc: {'accuracy': 0.8088235294117647, 'f1': 0.8655172413793105}  
 
-sst2: {'accuracy': 0.4729241877256318}  
-mnli: {'accuracy': 0.4729241877256318}  
-mnli_mismatched: {'accuracy': 0.4729241877256318}  
-mnli_matched: {'accuracy': 0.4729241877256318}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.4729241877256318, 'f1': 0.642156862745098}  
-qqp: {'accuracy': 0.4729241877256318, 'f1': 0.642156862745098}  
-qnli: {'accuracy': 0.4729241877256318}  
+mrpc_rte_cola_6 - 0:  
+mrpc: {'accuracy': 0.821078431372549, 'f1': 0.874354561101549}  
+
+mrpc_rte_cola_6 - 1:  
+mrpc: {'accuracy': 0.4166666666666667, 'f1': 0.5559701492537314}  
+rte: {'accuracy': 0.6028880866425993}  
+
+mrpc_rte_cola_6 - 2:  
+mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8116788321167884}  
+rte: {'accuracy': 0.516245487364621}  
+cola: {'matthews_correlation': 0.48652176899433314}  
+
+mrpc_cola_rte_6 - 0:  
+mrpc: {'accuracy': 0.8014705882352942, 'f1': 0.8615384615384616}  
+
+mrpc_cola_rte_6 - 1:  
+mrpc: {'accuracy': 0.75, 'f1': 0.843558282208589}  
+cola: {'matthews_correlation': 0.5235990316279782}  
+
+mrpc_cola_rte_6 - 2:  
+mrpc: {'accuracy': 0.33088235294117646, 'f1': 0.3973509933774834}  
+cola: {'matthews_correlation': 0.41319696759502633}  
+rte: {'accuracy': 0.5992779783393501}  
+
+cola_rte_mrpc_6 - 0:  
+cola: {'matthews_correlation': 0.5200220944545176}  
+
+cola_rte_mrpc_6 - 1:  
+cola: {'matthews_correlation': 0.4071353424775658}  
+rte: {'accuracy': 0.703971119133574}  
+
+cola_rte_mrpc_6 - 2:  
+cola: {'matthews_correlation': 0.1993093660511721}  
+rte: {'accuracy': 0.44765342960288806}  
+mrpc: {'accuracy': 0.8725490196078431, 'f1': 0.9106529209621993}  
+
+cola_mrpc_rte_6 - 0:  
+cola: {'matthews_correlation': 0.5048506698662225}  
+
+cola_mrpc_rte_6 - 1:  
+cola: {'matthews_correlation': 0.24651132722157929}  
+mrpc: {'accuracy': 0.8357843137254902, 'f1': 0.8892561983471075}  
+
+cola_mrpc_rte_6 - 2:  
+cola: {'matthews_correlation': -0.12919996867279102}  
+mrpc: {'accuracy': 0.23039215686274508, 'f1': 0.16489361702127656}  
+rte: {'accuracy': 0.6245487364620939}  
+
+rte_mrpc_cola_7 - 0:  
+rte: {'accuracy': 0.5956678700361011}  
+
+rte_mrpc_cola_7 - 1:  
+rte: {'accuracy': 0.47653429602888087}  
+mrpc: {'accuracy': 0.8088235294117647, 'f1': 0.8677966101694915}  
+
+rte_mrpc_cola_7 - 2:  
+rte: {'accuracy': 0.4368231046931408}  
+mrpc: {'accuracy': 0.7058823529411765, 'f1': 0.8224852071005917}  
+cola: {'matthews_correlation': 0.5155383069979991}  
+
+rte_cola_mrpc_7 - 0:  
+rte: {'accuracy': 0.6425992779783394}  
+
+rte_cola_mrpc_7 - 1:  
+rte: {'accuracy': 0.6462093862815884}  
+cola: {'matthews_correlation': 0.510581671760424}  
+
+rte_cola_mrpc_7 - 2:  
 rte: {'accuracy': 0.4729241877256318}  
-wnli: {'accuracy': 0.4729241877256318}  
-hans: {'accuracy': 0.4729241877256318}  
+cola: {'matthews_correlation': 0.3452285361947951}  
+mrpc: {'accuracy': 0.8333333333333334, 'f1': 0.8881578947368421}  
 
-rte_cola_mrpc_0 - 1:
+mrpc_rte_cola_7 - 0:  
+mrpc: {'accuracy': 0.821078431372549, 'f1': 0.8756388415672913}  
 
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
+mrpc_rte_cola_7 - 1:  
+mrpc: {'accuracy': 0.5490196078431373, 'f1': 0.6933333333333334}  
+rte: {'accuracy': 0.5884476534296029}  
 
-rte_cola_mrpc_0 - 2:
-
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
+mrpc_rte_cola_7 - 2:  
 mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
+rte: {'accuracy': 0.48014440433212996}  
+cola: {'matthews_correlation': 0.5075813582663956}  
 
-rte_cola_mrpc_2 - 0:
+mrpc_cola_rte_7 - 0:  
+mrpc: {'accuracy': 0.7990196078431373, 'f1': 0.8591065292096219}  
 
-sst2: {'accuracy': 0.4729241877256318}  
-mnli: {'accuracy': 0.4729241877256318}  
-mnli_mismatched: {'accuracy': 0.4729241877256318}  
-mnli_matched: {'accuracy': 0.4729241877256318}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.4729241877256318, 'f1': 0.642156862745098}  
-qqp: {'accuracy': 0.4729241877256318, 'f1': 0.642156862745098}  
-qnli: {'accuracy': 0.4729241877256318}  
+mrpc_cola_rte_7 - 1:  
+mrpc: {'accuracy': 0.7475490196078431, 'f1': 0.8427480916030534}  
+cola: {'matthews_correlation': 0.4939105407308262}  
+
+mrpc_cola_rte_7 - 2:  
+mrpc: {'accuracy': 0.34558823529411764, 'f1': 0.44490644490644493}  
+cola: {'matthews_correlation': 0.4121884254314843}  
+rte: {'accuracy': 0.6028880866425993}  
+
+cola_rte_mrpc_7 - 0:  
+cola: {'matthews_correlation': 0.49702553536108757}  
+
+cola_rte_mrpc_7 - 1:  
+cola: {'matthews_correlation': 0.41051204645145506}  
+rte: {'accuracy': 0.6678700361010831}  
+
+cola_rte_mrpc_7 - 2:  
+cola: {'matthews_correlation': 0.26470976643888067}  
 rte: {'accuracy': 0.4729241877256318}  
-wnli: {'accuracy': 0.4729241877256318}  
-hans: {'accuracy': 0.4729241877256318}  
+mrpc: {'accuracy': 0.821078431372549, 'f1': 0.8760611205432938}  
 
-rte_cola_mrpc_2 - 1:
+cola_mrpc_rte_7 - 0:  
+cola: {'matthews_correlation': 0.5126143737721263}  
 
-sst2: {'accuracy': 0.6912751677852349}  
-mnli: {'accuracy': 0.6912751677852349}  
-mnli_mismatched: {'accuracy': 0.6912751677852349}  
-mnli_matched: {'accuracy': 0.6912751677852349}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
-mrpc: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qqp: {'accuracy': 0.6912751677852349, 'f1': 0.8174603174603174}  
-qnli: {'accuracy': 0.6912751677852349}  
-rte: {'accuracy': 0.6912751677852349}  
-wnli: {'accuracy': 0.6912751677852349}  
-hans: {'accuracy': 0.6912751677852349}  
+cola_mrpc_rte_7 - 1:  
+cola: {'matthews_correlation': 0.4600853746935537}  
+mrpc: {'accuracy': 0.803921568627451, 'f1': 0.8615916955017301}  
 
-rte_cola_mrpc_2 - 2:
+cola_mrpc_rte_7 - 2:  
+cola: {'matthews_correlation': 0.39492313234248005}  
+mrpc: {'accuracy': 0.4411764705882353, 'f1': 0.5615384615384617}  
+rte: {'accuracy': 0.6137184115523465}  
 
-sst2: {'accuracy': 0.6838235294117647}  
-mnli: {'accuracy': 0.6838235294117647}  
-mnli_mismatched: {'accuracy': 0.6838235294117647}  
-mnli_matched: {'accuracy': 0.6838235294117647}  
-cola: {'matthews_correlation': 0.0}  
-stsb: {'pearson': nan, 'spearmanr': nan}  
+rte_mrpc_cola_8 - 0:  
+rte: {'accuracy': 0.628158844765343}  
+
+rte_mrpc_cola_8 - 1:  
+rte: {'accuracy': 0.41155234657039713}  
+mrpc: {'accuracy': 0.8161764705882353, 'f1': 0.8743718592964823}  
+
+rte_mrpc_cola_8 - 2:  
+rte: {'accuracy': 0.33212996389891697}  
+mrpc: {'accuracy': 0.7818627450980392, 'f1': 0.8589540412044374}  
+cola: {'matthews_correlation': 0.48599506757965116}  
+
+rte_cola_mrpc_8 - 0:  
+rte: {'accuracy': 0.6137184115523465}  
+
+rte_cola_mrpc_8 - 1:  
+rte: {'accuracy': 0.6462093862815884}  
+cola: {'matthews_correlation': 0.4801818467382683}  
+
+rte_cola_mrpc_8 - 2:  
+rte: {'accuracy': 0.4548736462093863}  
+cola: {'matthews_correlation': 0.33781124715873906}  
+mrpc: {'accuracy': 0.803921568627451, 'f1': 0.8675496688741722}  
+
+mrpc_rte_cola_8 - 0:  
+mrpc: {'accuracy': 0.7867647058823529, 'f1': 0.8507718696397941}  
+
+mrpc_rte_cola_8 - 1:  
+mrpc: {'accuracy': 0.375, 'f1': 0.45628997867803844}  
+rte: {'accuracy': 0.6137184115523465}  
+
+mrpc_rte_cola_8 - 2:  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8145985401459854}  
+rte: {'accuracy': 0.48736462093862815}  
+cola: {'matthews_correlation': 0.4747045393662238}  
+
+mrpc_cola_rte_8 - 0:  
+mrpc: {'accuracy': 0.7965686274509803, 'f1': 0.8605042016806722}  
+
+mrpc_cola_rte_8 - 1:  
+mrpc: {'accuracy': 0.7303921568627451, 'f1': 0.8307692307692308}  
+cola: {'matthews_correlation': 0.4856483967190665}  
+
+mrpc_cola_rte_8 - 2:  
+mrpc: {'accuracy': 0.3137254901960784, 'f1': 0.4067796610169492}  
+cola: {'matthews_correlation': -0.02031232391313516}  
+rte: {'accuracy': 0.6642599277978339}  
+
+cola_rte_mrpc_8 - 0:  
+cola: {'matthews_correlation': 0.4719849910356732}  
+
+cola_rte_mrpc_8 - 1:  
+cola: {'matthews_correlation': 0.3465251853187258}  
+rte: {'accuracy': 0.6462093862815884}  
+
+cola_rte_mrpc_8 - 2:  
+cola: {'matthews_correlation': 0.3016433418855528}  
+rte: {'accuracy': 0.49097472924187724}  
+mrpc: {'accuracy': 0.7916666666666666, 'f1': 0.8571428571428571}  
+
+cola_mrpc_rte_8 - 0:  
+cola: {'matthews_correlation': 0.47817459022785963}  
+
+cola_mrpc_rte_8 - 1:  
+cola: {'matthews_correlation': 0.30608315489070037}  
+mrpc: {'accuracy': 0.8259803921568627, 'f1': 0.8794567062818336}  
+
+cola_mrpc_rte_8 - 2:  
+cola: {'matthews_correlation': -0.008194308938556785}  
+mrpc: {'accuracy': 0.37745098039215685, 'f1': 0.42792792792792794}  
+rte: {'accuracy': 0.6353790613718412}  
+
+rte_mrpc_cola_9 - 0:  
+rte: {'accuracy': 0.5848375451263538}  
+
+rte_mrpc_cola_9 - 1:  
+rte: {'accuracy': 0.4187725631768953}  
+mrpc: {'accuracy': 0.7622549019607843, 'f1': 0.8438003220611916}  
+
+rte_mrpc_cola_9 - 2:  
+rte: {'accuracy': 0.45126353790613716}  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8145985401459854}  
+cola: {'matthews_correlation': 0.4304260866765428}  
+
+rte_cola_mrpc_9 - 0:  
+rte: {'accuracy': 0.6173285198555957}  
+
+rte_cola_mrpc_9 - 1:  
+rte: {'accuracy': 0.6101083032490975}  
+cola: {'matthews_correlation': 0.4459485588679525}  
+
+rte_cola_mrpc_9 - 2:  
+rte: {'accuracy': 0.4223826714801444}  
+cola: {'matthews_correlation': 0.31657590231625093}  
+mrpc: {'accuracy': 0.7867647058823529, 'f1': 0.8576104746317512}  
+
+mrpc_rte_cola_9 - 0:  
+mrpc: {'accuracy': 0.7794117647058824, 'f1': 0.8514851485148515}  
+
+mrpc_rte_cola_9 - 1:  
+mrpc: {'accuracy': 0.34558823529411764, 'f1': 0.3407407407407408}  
+rte: {'accuracy': 0.6028880866425993}  
+
+mrpc_rte_cola_9 - 2:  
+mrpc: {'accuracy': 0.6862745098039216, 'f1': 0.8134110787172011}  
+rte: {'accuracy': 0.48014440433212996}  
+cola: {'matthews_correlation': 0.42425075806204515}  
+
+mrpc_cola_rte_9 - 0:  
+mrpc: {'accuracy': 0.7696078431372549, 'f1': 0.8464052287581698}  
+
+mrpc_cola_rte_9 - 1:  
+mrpc: {'accuracy': 0.7132352941176471, 'f1': 0.826151560178306}  
+cola: {'matthews_correlation': 0.44997974461232476}  
+
+mrpc_cola_rte_9 - 2:  
+mrpc: {'accuracy': 0.27450980392156865, 'f1': 0.2952380952380952}  
+cola: {'matthews_correlation': 0.06635689908148355}  
+rte: {'accuracy': 0.6353790613718412}  
+
+cola_mrpc_rte_9 - 0:  
+cola: {'matthews_correlation': 0.45051784112581156}  
+
+cola_mrpc_rte_9 - 1:  
+cola: {'matthews_correlation': 0.18590205196989334}  
+mrpc: {'accuracy': 0.8014705882352942, 'f1': 0.8652246256239601}  
+
+cola_rte_mrpc_9 - 0:  
+cola: {'matthews_correlation': 0.4510223816140928}  
+
+cola_rte_mrpc_9 - 1:  
+cola: {'matthews_correlation': 0.40140645308106226}  
+rte: {'accuracy': 0.6137184115523465}  
+
+cola_rte_mrpc_9 - 2:  
+cola: {'matthews_correlation': 0.2431703967304969}  
+rte: {'accuracy': 0.4187725631768953}  
+mrpc: {'accuracy': 0.7818627450980392, 'f1': 0.8528925619834711}  
+
+cola_mrpc_rte_9 - 2:  
+cola: {'matthews_correlation': -0.23797013415209908}  
+mrpc: {'accuracy': 0.27450980392156865, 'f1': 0.21693121693121695}  
+rte: {'accuracy': 0.631768953068592}  
+
+cola_rte_mrpc_10 - 0:  
+cola: {'matthews_correlation': 0.3837563526100285}  
+
+cola_rte_mrpc_10 - 1:  
+cola: {'matthews_correlation': 0.36677168221902623}  
+rte: {'accuracy': 0.6064981949458483}  
+
+cola_rte_mrpc_10 - 2:  
+cola: {'matthews_correlation': 0.2302494908160266}  
+rte: {'accuracy': 0.4151624548736462}  
+mrpc: {'accuracy': 0.7769607843137255, 'f1': 0.8553259141494436}  
+
+cola_mrpc_rte_10 - 0:  
+cola: {'matthews_correlation': 0.3837563526100285}  
+
+cola_mrpc_rte_10 - 1:  
+cola: {'matthews_correlation': 0.32751736540831267}  
+mrpc: {'accuracy': 0.7450980392156863, 'f1': 0.83596214511041}  
+
+cola_mrpc_rte_10 - 2:  
+cola: {'matthews_correlation': 0.2139258572077333}  
+mrpc: {'accuracy': 0.4264705882352941, 'f1': 0.47533632286995514}  
+rte: {'accuracy': 0.6209386281588448}  
+
+rte_mrpc_cola_10 - 0:  
+rte: {'accuracy': 0.5740072202166066}  
+
+rte_mrpc_cola_10 - 1:  
+rte: {'accuracy': 0.4259927797833935}  
+mrpc: {'accuracy': 0.7622549019607843, 'f1': 0.8407224958949097}  
+
+rte_mrpc_cola_10 - 2:  
+rte: {'accuracy': 0.4368231046931408}  
+mrpc: {'accuracy': 0.6936274509803921, 'f1': 0.8169838945827232}  
+cola: {'matthews_correlation': 0.39521791340818474}  
+
+rte_cola_mrpc_10 - 0:  
+rte: {'accuracy': 0.5595667870036101}  
+
+rte_cola_mrpc_10 - 1:  
+rte: {'accuracy': 0.48014440433212996}  
+cola: {'matthews_correlation': 0.4025454740592728}  
+
+rte_cola_mrpc_10 - 2:  
+rte: {'accuracy': 0.4223826714801444}  
+cola: {'matthews_correlation': 0.25430833215552345}  
+mrpc: {'accuracy': 0.7622549019607843, 'f1': 0.8448}  
+
+mrpc_rte_cola_10 - 0:  
+mrpc: {'accuracy': 0.75, 'f1': 0.8344155844155844}  
+
+mrpc_rte_cola_10 - 1:  
+mrpc: {'accuracy': 0.27205882352941174, 'f1': 0.10271903323262839}  
+rte: {'accuracy': 0.5992779783393501}  
+
+mrpc_rte_cola_10 - 2:  
+mrpc: {'accuracy': 0.5784313725490197, 'f1': 0.7114093959731543}  
+rte: {'accuracy': 0.5270758122743683}  
+cola: {'matthews_correlation': 0.3927020726984416}  
+
+mrpc_cola_rte_10 - 0:  
+mrpc: {'accuracy': 0.7573529411764706, 'f1': 0.8436018957345972}  
+
+mrpc_cola_rte_10 - 1:  
+mrpc: {'accuracy': 0.7034313725490197, 'f1': 0.8212703101920238}  
+cola: {'matthews_correlation': 0.40858564179092355}  
+
+mrpc_cola_rte_10 - 2:  
+mrpc: {'accuracy': 0.2696078431372549, 'f1': 0.2032085561497326}  
+cola: {'matthews_correlation': -0.12595544001960396}  
+rte: {'accuracy': 0.6245487364620939}  
+
+rte_mrpc_cola_11 - 0:  
+rte: {'accuracy': 0.5740072202166066}  
+
+rte_mrpc_cola_11 - 1:  
+rte: {'accuracy': 0.47653429602888087}  
+mrpc: {'accuracy': 0.7205882352941176, 'f1': 0.8272727272727272}  
+
+rte_mrpc_cola_11 - 2:  
+rte: {'accuracy': 0.47653429602888087}  
+mrpc: {'accuracy': 0.696078431372549, 'f1': 0.8176470588235294}  
+cola: {'matthews_correlation': 0.3663821725095162}  
+
+rte_cola_mrpc_11 - 0:  
+rte: {'accuracy': 0.5703971119133574}  
+
+rte_cola_mrpc_11 - 1:  
+rte: {'accuracy': 0.4729241877256318}  
+cola: {'matthews_correlation': 0.36551336091195347}  
+
+rte_cola_mrpc_11 - 2:  
+rte: {'accuracy': 0.4296028880866426}  
+cola: {'matthews_correlation': 0.29222864829416634}  
+mrpc: {'accuracy': 0.7156862745098039, 'f1': 0.8220858895705522}  
+
+mrpc_rte_cola_11 - 0:  
+mrpc: {'accuracy': 0.7230392156862745, 'f1': 0.8253477588871715}  
+
+mrpc_rte_cola_11 - 1:  
+mrpc: {'accuracy': 0.2965686274509804, 'f1': 0.046511627906976744}  
+rte: {'accuracy': 0.6101083032490975}  
+
+mrpc_rte_cola_11 - 2:  
+mrpc: {'accuracy': 0.6764705882352942, 'f1': 0.8029850746268656}  
+rte: {'accuracy': 0.5126353790613718}  
+cola: {'matthews_correlation': 0.3456014554543514}  
+
+mrpc_cola_rte_11 - 0:  
+mrpc: {'accuracy': 0.7303921568627451, 'f1': 0.8297213622291022}  
+
+mrpc_cola_rte_11 - 1:  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8145985401459854}  
+cola: {'matthews_correlation': 0.3556451144819016}  
+
+mrpc_cola_rte_11 - 2:  
+mrpc: {'accuracy': 0.37254901960784315, 'f1': 0.34693877551020413}  
+cola: {'matthews_correlation': 0.31951574880896005}  
+rte: {'accuracy': 0.6389891696750902}  
+
+cola_rte_mrpc_11 - 0:  
+cola: {'matthews_correlation': 0.3865296474948357}  
+
+cola_rte_mrpc_11 - 1:  
+cola: {'matthews_correlation': 0.3245964204558575}  
+rte: {'accuracy': 0.592057761732852}  
+
+cola_rte_mrpc_11 - 2:  
+cola: {'matthews_correlation': 0.1949585962172032}  
+rte: {'accuracy': 0.4584837545126354}  
+mrpc: {'accuracy': 0.7352941176470589, 'f1': 0.8301886792452831}  
+
+cola_mrpc_rte_11 - 0:  
+cola: {'matthews_correlation': 0.3443831021173783}  
+
+cola_mrpc_rte_11 - 1:  
+cola: {'matthews_correlation': 0.23055877745040174}  
+mrpc: {'accuracy': 0.7181372549019608, 'f1': 0.8233486943164363}  
+
+cola_mrpc_rte_11 - 2:  
+cola: {'matthews_correlation': 0.35016321987632565}  
+mrpc: {'accuracy': 0.5833333333333334, 'f1': 0.6942446043165468}  
+rte: {'accuracy': 0.5884476534296029}  
+
+rte_cola_mrpc_12 - 0:  
+rte: {'accuracy': 0.5631768953068592}  
+
+rte_cola_mrpc_12 - 1:  
+rte: {'accuracy': 0.4729241877256318}  
+cola: {'matthews_correlation': 0.22092729492191307}  
+
+rte_cola_mrpc_12 - 2:  
+rte: {'accuracy': 0.4548736462093863}  
+cola: {'matthews_correlation': 0.09450316316043533}  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8145985401459854}  
+
+mrpc_rte_cola_12 - 0:  
+mrpc: {'accuracy': 0.6911764705882353, 'f1': 0.8157894736842105}  
+
+mrpc_rte_cola_12 - 1:  
+mrpc: {'accuracy': 0.32107843137254904, 'f1': 0.041522491349480974}  
+rte: {'accuracy': 0.5379061371841155}  
+
+mrpc_rte_cola_12 - 2:  
 mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qqp: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
-qnli: {'accuracy': 0.6838235294117647}  
-rte: {'accuracy': 0.6838235294117647}  
-wnli: {'accuracy': 0.6838235294117647}  
-hans: {'accuracy': 0.6838235294117647}  
+rte: {'accuracy': 0.4729241877256318}  
+cola: {'matthews_correlation': 0.2228532415409462}  
+
+mrpc_cola_rte_12 - 0:  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8145985401459854}  
+
+mrpc_cola_rte_12 - 1:  
+mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
+cola: {'matthews_correlation': 0.2685388119872844}  
+
+mrpc_cola_rte_12 - 2:  
+mrpc: {'accuracy': 0.3161764705882353, 'f1': 0.04123711340206186}  
+cola: {'matthews_correlation': 0.2880531281790735}  
+rte: {'accuracy': 0.5379061371841155}  
+
+cola_rte_mrpc_12 - 0:  
+cola: {'matthews_correlation': 0.24509369897354713}  
+
+cola_rte_mrpc_12 - 1:  
+cola: {'matthews_correlation': 0.2894166011790952}  
+rte: {'accuracy': 0.5667870036101083}  
+
+cola_rte_mrpc_12 - 2:  
+cola: {'matthews_correlation': 0.11109958477894548}  
+rte: {'accuracy': 0.4584837545126354}  
+mrpc: {'accuracy': 0.6862745098039216, 'f1': 0.8128654970760235}  
+
+rte_mrpc_cola_12 - 0:  
+rte: {'accuracy': 0.5523465703971119}  
+
+rte_mrpc_cola_12 - 1:  
+rte: {'accuracy': 0.4584837545126354}  
+mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
+
+rte_mrpc_cola_12 - 2:  
+rte: {'accuracy': 0.4729241877256318}  
+mrpc: {'accuracy': 0.6838235294117647, 'f1': 0.8122270742358079}  
+cola: {'matthews_correlation': 0.2688165879920979}  
+
+cola_mrpc_rte_12 - 0:  
+cola: {'matthews_correlation': 0.21580374087877008}  
+
+cola_mrpc_rte_12 - 1:  
+cola: {'matthews_correlation': 0.03589254563226399}  
+mrpc: {'accuracy': 0.6887254901960784, 'f1': 0.8140556368960467}  
+
+cola_mrpc_rte_12 - 2:  
+cola: {'matthews_correlation': 0.4043536936696055}  
+mrpc: {'accuracy': 0.32598039215686275, 'f1': 0.0924092409240924}  
+rte: {'accuracy': 0.5342960288808665}  
+
