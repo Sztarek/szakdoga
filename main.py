@@ -11,12 +11,12 @@ from datasets import load_metric
 import torch
 from transformers.data.data_collator import DataCollatorWithPadding
 import re
-from keras.preprocessing.sequence import pad_sequences
 
 file_name='out.txt'
 checkpoint_base = "bert-base-uncased"
-freeze_layer_count = 12
 eval_dataloader = [None, None, None]
+classifier_weights = [None, None, None]
+classifier_biases = [None, None, None]
 
 def main(argv):
   layerNum = []
@@ -54,10 +54,10 @@ def multipleLearn(params):
 
 
 def generateParameters(dbName, freeze_layer_count):
-  dbPermutations = permutations(dbName)
+  dbPermutations = list(permutations(dbName))
   result = []
-  for db in dbPermutations:
-    for layer_count in freeze_layer_count:
+  for layer_count in freeze_layer_count:
+    for db in dbPermutations:
       result.append([db, layer_count])
   return result
 
@@ -214,17 +214,22 @@ def preprocessCola():
 
 def eval(model, device, model_name, numInIteration, params):
   model.save_pretrained('./models/'+model_name)
-  global eval_dataloader
+  global eval_dataloader, classifier_weights, classifier_biases
   model.eval()
   f = open(file_name, "a")
   f.write(model_name + ' - ' + str(numInIteration) + ':\n')
   i = 0
+  classifier_weights[numInIteration] = model.classifier.weight
+  classifier_biases[numInIteration] = model.classifier.bias
   for metricName in params[:(numInIteration + 1)]:
     metric = load_metric('glue', metricName)
+    model_actual = model
+    model_actual.classifier.weight = classifier_weights[i]
+    model_actual.classifier.bias = classifier_biases[i]
     for batch in eval_dataloader[i]:
       batch = {k: v.to(device) for k, v in batch.items()}
       with torch.no_grad():
-        outputs = model(**batch)
+        outputs = model_actual(**batch)
 
       logits = outputs.logits
       predictions = torch.argmax(logits, dim=-1)
